@@ -31,6 +31,8 @@ public class Activator : MonoBehaviour
         if (Input.GetKeyDown(key) && active)
         {
             Destroy(note);
+            AddScore();
+            active = false;
         }
     }
 
@@ -43,6 +45,11 @@ public class Activator : MonoBehaviour
         }
     }
 
+    void AddScore()
+    {
+        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + 100);
+    }
+
     void OnTriggerExit2D(Collider2D col)
     {
         active = false;
@@ -52,7 +59,7 @@ public class Activator : MonoBehaviour
     {
         
         sr.color = new Color(0, 0, 0);
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.5f);
         sr.color = old;
     }
 }

@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Activator.cs" />
     <Compile Include="Assets\Note.cs" />
+    <Compile Include="Assets\PPText.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Library/Documents/Projects/Unity Projects/RhythmGame1/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
