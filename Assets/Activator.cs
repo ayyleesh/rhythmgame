@@ -7,8 +7,10 @@ public class Activator : MonoBehaviour
     SpriteRenderer sr;
     public KeyCode key;
     bool active = false;
-    GameObject note;
+    GameObject note, gm;
     Color old;
+    public bool createMode;
+    public GameObject n;
 
     // Use this for initialization
     void Awake()
@@ -18,21 +20,36 @@ public class Activator : MonoBehaviour
 
     void Start()
     {
+        gm = GameObject.Find("GameManager");
         old = sr.color;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(key))
+        if (createMode)
         {
-            StartCoroutine(Pressed());
+            if (Input.GetKeyDown(key))
+            {
+                Instantiate(n, transform.position, Quaternion.identity);
+            }
         }
-        if (Input.GetKeyDown(key) && active)
-        {
-            Destroy(note);
-            AddScore();
-            active = false;
+        else {
+            if (Input.GetKeyDown(key))
+            {
+                StartCoroutine(Pressed());
+            }
+            if (Input.GetKeyDown(key) && active)
+            {
+                Destroy(note);
+                gm.GetComponent<GameManager>().AddStreak();
+                AddScore();
+                active = false;
+            }
+            else if (Input.GetKeyDown(key) && !active)
+            {
+                gm.GetComponent<GameManager>().ResetStreak();
+            }
         }
     }
 
@@ -47,7 +64,7 @@ public class Activator : MonoBehaviour
 
     void AddScore()
     {
-        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + 100);
+        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score")+gm.GetComponent<GameManager>().GetScore());
     }
 
     void OnTriggerExit2D(Collider2D col)
