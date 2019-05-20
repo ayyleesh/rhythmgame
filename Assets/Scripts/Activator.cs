@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class Activator : MonoBehaviour
 {
-    SpriteRenderer sr;
+    SpriteRenderer spriteRenderer;
     public KeyCode key;
     bool active = false;
-    GameObject note, gm;
+    GameObject note, specialNote, gameManager;
     Color old;
     public bool createMode;
-    public GameObject n;
+    public GameObject newNote;
 
     // Use this for initialization
     void Awake()
     {
-        sr = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Start()
     {
-        gm = GameObject.Find("GameManager");
-        old = sr.color;
+        gameManager = GameObject.Find("GameManager");
+        old = spriteRenderer.color;
     }
 
     // Update is called once per frame
@@ -31,7 +31,7 @@ public class Activator : MonoBehaviour
         {
             if (Input.GetKeyDown(key))
             {
-                Instantiate(n, transform.position, Quaternion.identity);
+                Instantiate(newNote, transform.position, Quaternion.identity);
             }
         }
         else {
@@ -42,29 +42,32 @@ public class Activator : MonoBehaviour
             if (Input.GetKeyDown(key) && active)
             {
                 Destroy(note);
-                gm.GetComponent<GameManager>().AddStreak();
+                gameManager.GetComponent<GameManager>().AddCombo();
                 AddScore();
                 active = false;
             }
             else if (Input.GetKeyDown(key) && !active)
             {
-                gm.GetComponent<GameManager>().ResetStreak();
+                gameManager.GetComponent<GameManager>().ResetStreak();
             }
         }
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        active = true;
-        if (col.gameObject.tag == "Note")
+        
+        if (other.gameObject.tag == "Note")
         {
-            note = col.gameObject;
+            active = true;
+            note = other.gameObject;
         }
+        
     }
 
     void AddScore()
     {
-        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score")+gm.GetComponent<GameManager>().GetScore());
+
+        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + gameManager.GetComponent<GameManager>().GetScore());
     }
 
     void OnTriggerExit2D(Collider2D col)
@@ -75,8 +78,8 @@ public class Activator : MonoBehaviour
     IEnumerator Pressed()
     {
         
-        sr.color = new Color(0, 0, 0);
+        spriteRenderer.color = new Color(0, 0, 0);
         yield return new WaitForSeconds(0.5f);
-        sr.color = old;
+        spriteRenderer.color = old;
     }
 }

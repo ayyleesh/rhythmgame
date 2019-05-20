@@ -1,14 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     int multiplier = 1;
-    int streak = 0;
+    int combo = 0;
+    int score = 100;
+    int perfectScore = 150;
+    
+    public Text multiplierText;
+    public Text comboText;
+
     // Start is called before the first frame update
     void Start()
     {
+        multiplierText.text = "1x";
+        comboText.text = "combo: 0";
         PlayerPrefs.SetInt("Score", 0);
     }
 
@@ -23,18 +32,18 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void AddStreak()
+    public void AddCombo()
     {
-        streak++;
-        if (streak >= 24)
+        combo++;
+        if (combo >= 24)
         {
             multiplier = 4;
         }
-        else if (streak >= 16)
+        else if (combo >= 16)
         {
             multiplier = 3;
         }
-        else if (streak >= 3)
+        else if (combo >= 3)
         {
             multiplier = 2;
         }
@@ -48,20 +57,26 @@ public class GameManager : MonoBehaviour
 
     public void ResetStreak()
     {
-        streak = 0;
+        combo = 0;
         multiplier = 1;
         UpdateGUI();
     }
 
     public void UpdateGUI()
     {
-        PlayerPrefs.SetInt("Streak", streak);
-        PlayerPrefs.SetInt("Mult", multiplier);
+        multiplierText.text = multiplier + "x";
+        comboText.text = "Combo: " + combo;
+        
     }
 
     public int GetScore()
     {
-        return 100*multiplier;
+        return score * multiplier;
+    }
+
+    public int GetPerfectScore()
+    {
+        return perfectScore * multiplier;
     }
 
 }
