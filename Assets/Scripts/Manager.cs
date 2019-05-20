@@ -10,7 +10,9 @@ public class Manager : MonoBehaviour
     public NoteScroller noteScroller;
     public AudioSource gameMusic;
     public static Manager instance;
+    public GameObject result;
 
+    public Text scorePercentageText, perfectScoreText, goodScoreText, missedText, rankText, scoreFinalText;
     public Text scoreText;
     public Text multiplierText;
 
@@ -91,5 +93,39 @@ public class Manager : MonoBehaviour
         currentMultiplier = 1;
         multiplierText.text = currentMultiplier + "x";
         missedHit++;
+    }
+
+    public void DisplayResult()
+    {
+        result.SetActive(true);
+        goodScoreText.text = "" + goodHit;
+        perfectScoreText.text = "" + perfectHit;
+        missedText.text = "" + missedHit;
+        
+        scoreFinalText.text = "" + currentScore;
+        float total = goodHit + perfectHit;
+        float percentHit = (total / totalNotes) * 100f;
+
+        scorePercentageText.text = percentHit.ToString("F1") + "%";
+
+        string rankVal = "D";
+
+        if (percentHit > 50)
+        {
+            rankVal = "C";
+            if (percentHit > 75)
+            {
+                rankVal = "B";
+                if (percentHit > 90)
+                {
+                    rankVal = "A";
+                    if (percentHit > 95)
+                    {
+                        rankVal = "S";
+                    }
+                }
+            }
+        }
+        rankText.text = rankVal;
     }
 }

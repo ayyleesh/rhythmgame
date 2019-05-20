@@ -82,4 +82,12 @@ public class ButtonController : MonoBehaviour
         yield return new WaitForSeconds(delay);
         sr.color = old;
     }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "FinishNote")
+        {
+            Manager.instance.DisplayResult();
+        }
+    }
 }
