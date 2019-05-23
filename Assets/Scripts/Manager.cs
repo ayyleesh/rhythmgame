@@ -21,6 +21,7 @@ public class Manager : MonoBehaviour
     public int currentScore;
     public int score = 100;
     public int perfectScore = 150;
+    public int badScore = 0;
     
     public int currentMultiplier;
     public int multiplierTracker;
@@ -29,6 +30,7 @@ public class Manager : MonoBehaviour
     public float totalNotes;
     public float perfectHit;
     public float goodHit;
+    public float badHit;
     public float missedHit;
 
     void Start()
@@ -87,6 +89,13 @@ public class Manager : MonoBehaviour
         perfectHit++;
     }
 
+    public void BadHit()
+    {
+        currentMultiplier = 1;
+        MissNote();
+        badHit++;
+    }
+
     public void MissNote()
     {
         Debug.Log("miss");
@@ -98,6 +107,7 @@ public class Manager : MonoBehaviour
     public void DisplayResult()
     {
         result.SetActive(true);
+        gameMusic.Stop();
         goodScoreText.text = "" + goodHit;
         perfectScoreText.text = "" + perfectHit;
         missedText.text = "" + missedHit;

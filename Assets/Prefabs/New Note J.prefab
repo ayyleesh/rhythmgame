@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canBePressed: 0
-  key: 100
+  key: 106
   noteScore: 100
 --- !u!1001 &2917538771623101559
 PrefabInstance:
@@ -24,7 +24,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1771892368696092, guid: 2ea4bfc299cda1643870d805cc98084e, type: 3}
       propertyPath: m_Name
-      value: Note Variant
+      value: New Note J
       objectReference: {fileID: 0}
     - target: {fileID: 4965682290992302, guid: 2ea4bfc299cda1643870d805cc98084e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -92,6 +92,11 @@ PrefabInstance:
         type: 3}
       propertyPath: speed
       value: 2.1333
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830777453252158, guid: 2ea4bfc299cda1643870d805cc98084e,
+        type: 3}
+      propertyPath: key
+      value: 106
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ea4bfc299cda1643870d805cc98084e, type: 3}

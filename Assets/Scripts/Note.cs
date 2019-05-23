@@ -5,19 +5,18 @@ using UnityEngine;
 public class Note : MonoBehaviour {
 
     Rigidbody2D rb;
-    public float speed;
+    public KeyCode key;
 
     void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
     }
     // Use this for initialization
     void Start () {
-        rb.velocity = new Vector2(0, -4);
-	}
+
+        rb = GetComponent<Rigidbody2D>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+    }
 }

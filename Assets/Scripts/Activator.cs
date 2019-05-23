@@ -11,6 +11,7 @@ public class Activator : MonoBehaviour
     Color old;
     public bool createMode;
     public GameObject newNote;
+    public GameObject scroller;
 
     // Use this for initialization
     void Awake()
@@ -31,7 +32,8 @@ public class Activator : MonoBehaviour
         {
             if (Input.GetKeyDown(key))
             {
-                Instantiate(newNote, transform.position, Quaternion.identity);
+                GameObject note = Instantiate(newNote, transform.position, Quaternion.identity);
+                note.transform.parent = scroller.transform;
             }
         }
         else {
@@ -41,14 +43,29 @@ public class Activator : MonoBehaviour
             }
             if (Input.GetKeyDown(key) && active)
             {
-                Destroy(note);
-                gameManager.GetComponent<GameManager>().AddCombo();
-                AddScore();
+                note.SetActive(false);
+                if (Mathf.Abs(note.transform.position.y) > 0.4)
+                {
+                    Debug.Log("bad");
+                    GameManager.instance.BadHit();
+                }
+                if (Mathf.Abs(note.transform.position.y) > 0.2)
+                {
+                    Debug.Log("good");
+                    GameManager.instance.GoodHit();
+                }
+                else if (Mathf.Abs(note.transform.position.y) > 0.1)
+                {
+                    Debug.Log("perfect");
+                    GameManager.instance.PerfectHit();
+                }
                 active = false;
             }
             else if (Input.GetKeyDown(key) && !active)
             {
-                gameManager.GetComponent<GameManager>().ResetStreak();
+                GameManager.instance.ResetStreak();
+                Debug.Log("missed");
+                GameManager.instance.MissedHit();
             }
         }
     }
@@ -61,25 +78,32 @@ public class Activator : MonoBehaviour
             active = true;
             note = other.gameObject;
         }
-        
+
+        else if (other.gameObject.tag == "FinishNote")
+        {
+            GameManager.instance.DisplayResult();
+        }
+
     }
 
-    void AddScore()
-    {
+    //void AddScore()
+    //{
 
-        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + gameManager.GetComponent<GameManager>().GetScore());
-    }
+    //    PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + GameManager.instance.GetScore());
+    //}
 
     void OnTriggerExit2D(Collider2D col)
     {
+        Debug.Log("missed");
         active = false;
+        GameManager.instance.MissedHit();
     }
 
     IEnumerator Pressed()
     {
         
         spriteRenderer.color = new Color(0, 0, 0);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.05f);
         spriteRenderer.color = old;
     }
 }

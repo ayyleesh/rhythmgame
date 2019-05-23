@@ -19,23 +19,22 @@ public class NoteObject : MonoBehaviour
         {
             if (canBePressed)
             {
-                gameObject.SetActive(false);
-                //Manager.instance.HitNote();
-                if (Mathf.Abs(transform.position.y) > 0.4)
-                {
-                    Debug.Log("bad");
-                    Manager.instance.MissNote();
-                }
-                if (Mathf.Abs(transform.position.y) > 0.2)
-                {
-                    Debug.Log("good");
-                    Manager.instance.GoodHit();
-                }
-                else if(Mathf.Abs(transform.position.y) > 0.1)
-                {
-                    Debug.Log("perfect");
-                    Manager.instance.PerfectHit();
-                }
+                //gameObject.SetActive(false);
+                //if (Mathf.Abs(transform.position.y) > 0.4)
+                //{
+                //    Debug.Log("bad");
+                //    GameManager.instance.BadHit();
+                //}
+                //if (Mathf.Abs(transform.position.y) > 0.2)
+                //{
+                //    Debug.Log("good");
+                //    GameManager.instance.GoodHit();
+                //}
+                //else if (Mathf.Abs(transform.position.y) > 0.1)
+                //{
+                //    Debug.Log("perfect");
+                //    GameManager.instance.PerfectHit();
+                //}
             }
         }
     }
@@ -53,7 +52,7 @@ public class NoteObject : MonoBehaviour
         if (other.tag == "Activator")
         {
             canBePressed = false;
-            Manager.instance.MissNote();
+            GameManager.instance.ResetStreak();
         }
     }
 }

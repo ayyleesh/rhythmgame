@@ -9,6 +9,7 @@ public class ButtonController : MonoBehaviour
     public float delay;
     public bool createMode;
     public GameObject newNote;
+    public GameObject scroller;
 
     SpriteRenderer sr;
     Color old;
@@ -34,6 +35,7 @@ public class ButtonController : MonoBehaviour
             if (Input.GetKeyDown(key))
             {
                 GameObject note = Instantiate(newNote, transform.position, Quaternion.identity);
+                note.transform.parent = scroller.transform;
             }
         }
         else

@@ -5,11 +5,13 @@ using UnityEngine;
 public class NoteScroller : MonoBehaviour
 {
     public float beatTempo;
+    public float scrollSpeed;
     public bool hasStarted;
+    
 
     void Start()
     {
-        beatTempo = beatTempo / 60f;
+        //scrollSpeed = beatTempo / 60f;
     }
 
     // Update is called once per frame
@@ -17,7 +19,7 @@ public class NoteScroller : MonoBehaviour
     {
         if (hasStarted)
         {
-            transform.position -= new Vector3(0f, beatTempo * Time.deltaTime, 0f);
+            transform.position -= new Vector3(0f, scrollSpeed * Time.deltaTime, 0f);
         }
     }
 }

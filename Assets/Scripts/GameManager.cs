@@ -5,31 +5,56 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    int multiplier = 1;
-    int combo = 0;
-    int score = 100;
-    int perfectScore = 150;
-    
+    public static GameManager instance;
+    public NoteScroller noteScroller;
+    public AudioSource gameMusic;
+    public GameObject result;
+
+    public Text scoreText;
     public Text multiplierText;
     public Text comboText;
+    public Text scorePercentageText, perfectScoreText, goodScoreText, missedText, rankText, scoreFinalText;
 
-    // Start is called before the first frame update
+    public bool startPlaying;
+
+    public int score;
+    public int currentScore;
+    int multiplier = 1;
+    int combo = 0;
+
+    public float totalNotes;
+    public float perfectHit;
+    public float goodHit;
+    public float badHit;
+    public float missedHit;
+    
     void Start()
     {
-        multiplierText.text = "1x";
-        comboText.text = "combo: 0";
-        PlayerPrefs.SetInt("Score", 0);
-    }
+        instance = this;
+        totalNotes = FindObjectsOfType<NoteObject>().Length;
 
-    // Update is called once per frame
+        scoreText.text = "000";
+        multiplierText.text = "1x";
+        comboText.text = "Combo: 0";
+    }
+    
     void Update()
     {
-
+        if (!startPlaying)
+        {
+            if (Input.anyKeyDown)
+            {
+                startPlaying = true;
+                noteScroller.hasStarted = true;
+                gameMusic.Play();
+            }
+        }
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-
+        other.gameObject.SetActive(false);
+        ResetStreak();
     }
 
     public void AddCombo()
@@ -66,17 +91,77 @@ public class GameManager : MonoBehaviour
     {
         multiplierText.text = multiplier + "x";
         comboText.text = "Combo: " + combo;
-        
+        scoreText.text = "" + currentScore;
     }
 
-    public int GetScore()
+    public void GoodHit()
     {
-        return score * multiplier;
+        score = NoteObject.FindObjectOfType<NoteObject>().noteScore;
+        HitNote();
+        goodHit++;
     }
 
-    public int GetPerfectScore()
+    public void PerfectHit()
     {
-        return perfectScore * multiplier;
+        score = NoteObject.FindObjectOfType<NoteObject>().noteScore + 50;
+        HitNote();
+        perfectHit++;
+    }
+
+    public void BadHit()
+    {
+        ResetStreak();
+        badHit++;
+    }
+
+    public void MissedHit()
+    {
+        ResetStreak();
+        missedHit++;
+    }
+
+    public void HitNote()
+    {
+        currentScore += score * multiplier;
+        AddCombo();
+        UpdateGUI();
+    }
+
+    
+
+    public void DisplayResult()
+    {
+        result.SetActive(true);
+        gameMusic.Stop();
+        goodScoreText.text = "" + goodHit;
+        perfectScoreText.text = "" + perfectHit;
+        missedText.text = "" + missedHit;
+
+        scoreFinalText.text = "" + currentScore;
+        float total = goodHit + perfectHit;
+        float percentHit = (total / totalNotes) * 100f;
+
+        scorePercentageText.text = percentHit.ToString("F1") + "%";
+
+        string rankVal = "D";
+
+        if (percentHit > 50)
+        {
+            rankVal = "C";
+            if (percentHit > 75)
+            {
+                rankVal = "B";
+                if (percentHit > 90)
+                {
+                    rankVal = "A";
+                    if (percentHit > 95)
+                    {
+                        rankVal = "S";
+                    }
+                }
+            }
+        }
+        rankText.text = rankVal;
     }
 
 }
