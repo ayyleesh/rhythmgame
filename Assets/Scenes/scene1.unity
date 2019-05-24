@@ -628,7 +628,6 @@ GameObject:
   - component: {fileID: 131301853}
   - component: {fileID: 131301852}
   - component: {fileID: 131301851}
-  - component: {fileID: 131301850}
   - component: {fileID: 131301849}
   m_Layer: 0
   m_Name: New Note A(Clone)
@@ -649,22 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 97
   noteScore: 100
---- !u!114 &131301850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131301848}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 97
 --- !u!50 &131301851
 Rigidbody2D:
   serializedVersion: 4
@@ -777,7 +761,6 @@ GameObject:
   - component: {fileID: 149057115}
   - component: {fileID: 149057114}
   - component: {fileID: 149057113}
-  - component: {fileID: 149057112}
   - component: {fileID: 149057111}
   m_Layer: 0
   m_Name: New Note D(Clone) (17)
@@ -798,22 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &149057112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149057110}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &149057113
 Rigidbody2D:
   serializedVersion: 4
@@ -926,7 +894,6 @@ GameObject:
   - component: {fileID: 185466151}
   - component: {fileID: 185466150}
   - component: {fileID: 185466149}
-  - component: {fileID: 185466148}
   - component: {fileID: 185466147}
   m_Layer: 0
   m_Name: New Note K(Clone) (1)
@@ -947,22 +914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 107
   noteScore: 100
---- !u!114 &185466148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185466146}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 107
 --- !u!50 &185466149
 Rigidbody2D:
   serializedVersion: 4
@@ -1199,7 +1151,6 @@ GameObject:
   - component: {fileID: 196443303}
   - component: {fileID: 196443302}
   - component: {fileID: 196443301}
-  - component: {fileID: 196443300}
   - component: {fileID: 196443299}
   m_Layer: 0
   m_Name: New Note A(Clone) (1)
@@ -1220,22 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 97
   noteScore: 100
---- !u!114 &196443300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196443298}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 97
 --- !u!50 &196443301
 Rigidbody2D:
   serializedVersion: 4
@@ -1366,11 +1302,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1497465945}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: 273}
+  m_AnchoredPosition: {x: 50, y: 172}
   m_SizeDelta: {x: 388.90002, y: 99}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &196583955
@@ -1427,7 +1363,6 @@ GameObject:
   - component: {fileID: 202868235}
   - component: {fileID: 202868234}
   - component: {fileID: 202868233}
-  - component: {fileID: 202868232}
   - component: {fileID: 202868231}
   m_Layer: 0
   m_Name: New Note K(Clone)
@@ -1448,22 +1383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 107
   noteScore: 100
---- !u!114 &202868232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 202868230}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 107
 --- !u!50 &202868233
 Rigidbody2D:
   serializedVersion: 4
@@ -1576,7 +1496,6 @@ GameObject:
   - component: {fileID: 207978436}
   - component: {fileID: 207978435}
   - component: {fileID: 207978434}
-  - component: {fileID: 207978433}
   - component: {fileID: 207978432}
   m_Layer: 0
   m_Name: New Note K(Clone) (4)
@@ -1597,22 +1516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 107
   noteScore: 100
---- !u!114 &207978433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207978431}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 107
 --- !u!50 &207978434
 Rigidbody2D:
   serializedVersion: 4
@@ -1938,7 +1842,6 @@ GameObject:
   - component: {fileID: 259446318}
   - component: {fileID: 259446317}
   - component: {fileID: 259446316}
-  - component: {fileID: 259446315}
   - component: {fileID: 259446314}
   m_Layer: 0
   m_Name: New Note J(Clone) (9)
@@ -1959,22 +1862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &259446315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259446313}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &259446316
 Rigidbody2D:
   serializedVersion: 4
@@ -2299,7 +2187,6 @@ GameObject:
   - component: {fileID: 302131277}
   - component: {fileID: 302131276}
   - component: {fileID: 302131275}
-  - component: {fileID: 302131274}
   - component: {fileID: 302131273}
   m_Layer: 0
   m_Name: New Note J(Clone) (10)
@@ -2320,22 +2207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &302131274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302131272}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &302131275
 Rigidbody2D:
   serializedVersion: 4
@@ -2527,7 +2399,6 @@ GameObject:
   - component: {fileID: 352128835}
   - component: {fileID: 352128834}
   - component: {fileID: 352128833}
-  - component: {fileID: 352128832}
   - component: {fileID: 352128831}
   m_Layer: 0
   m_Name: New Note D(Clone) (7)
@@ -2548,22 +2419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &352128832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 352128830}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &352128833
 Rigidbody2D:
   serializedVersion: 4
@@ -2834,7 +2690,6 @@ GameObject:
   - component: {fileID: 371403685}
   - component: {fileID: 371403684}
   - component: {fileID: 371403683}
-  - component: {fileID: 371403682}
   - component: {fileID: 371403681}
   m_Layer: 0
   m_Name: New Note J(Clone) (2)
@@ -2855,22 +2710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &371403682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371403680}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &371403683
 Rigidbody2D:
   serializedVersion: 4
@@ -2983,7 +2823,6 @@ GameObject:
   - component: {fileID: 380902162}
   - component: {fileID: 380902161}
   - component: {fileID: 380902160}
-  - component: {fileID: 380902159}
   - component: {fileID: 380902158}
   m_Layer: 0
   m_Name: New Note J(Clone) (11)
@@ -3004,22 +2843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &380902159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 380902157}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &380902160
 Rigidbody2D:
   serializedVersion: 4
@@ -3256,7 +3080,6 @@ GameObject:
   - component: {fileID: 414736517}
   - component: {fileID: 414736516}
   - component: {fileID: 414736515}
-  - component: {fileID: 414736514}
   - component: {fileID: 414736513}
   m_Layer: 0
   m_Name: New Note J(Clone) (8)
@@ -3277,22 +3100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &414736514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414736512}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &414736515
 Rigidbody2D:
   serializedVersion: 4
@@ -3405,7 +3213,6 @@ GameObject:
   - component: {fileID: 449910745}
   - component: {fileID: 449910744}
   - component: {fileID: 449910743}
-  - component: {fileID: 449910742}
   - component: {fileID: 449910741}
   m_Layer: 0
   m_Name: New Note S(Clone) (6)
@@ -3426,22 +3233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 115
   noteScore: 100
---- !u!114 &449910742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449910740}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 115
 --- !u!50 &449910743
 Rigidbody2D:
   serializedVersion: 4
@@ -3940,7 +3732,6 @@ GameObject:
   - component: {fileID: 548350334}
   - component: {fileID: 548350333}
   - component: {fileID: 548350332}
-  - component: {fileID: 548350331}
   - component: {fileID: 548350330}
   m_Layer: 0
   m_Name: New Note D(Clone) (9)
@@ -3961,22 +3752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &548350331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 548350329}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &548350332
 Rigidbody2D:
   serializedVersion: 4
@@ -4089,7 +3865,6 @@ GameObject:
   - component: {fileID: 575973395}
   - component: {fileID: 575973394}
   - component: {fileID: 575973393}
-  - component: {fileID: 575973392}
   - component: {fileID: 575973391}
   m_Layer: 0
   m_Name: New Note S(Clone)
@@ -4110,22 +3885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 115
   noteScore: 100
---- !u!114 &575973392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575973390}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 115
 --- !u!50 &575973393
 Rigidbody2D:
   serializedVersion: 4
@@ -4238,7 +3998,6 @@ GameObject:
   - component: {fileID: 578691755}
   - component: {fileID: 578691754}
   - component: {fileID: 578691753}
-  - component: {fileID: 578691752}
   - component: {fileID: 578691751}
   m_Layer: 0
   m_Name: New Note D(Clone) (8)
@@ -4259,22 +4018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &578691752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 578691750}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &578691753
 Rigidbody2D:
   serializedVersion: 4
@@ -4526,11 +4270,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1497465945}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: 109}
+  m_AnchoredPosition: {x: 50, y: 7.9999695}
   m_SizeDelta: {x: 581.4, y: 99}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &661093860
@@ -4545,7 +4289,6 @@ GameObject:
   - component: {fileID: 661093865}
   - component: {fileID: 661093864}
   - component: {fileID: 661093863}
-  - component: {fileID: 661093862}
   - component: {fileID: 661093861}
   m_Layer: 0
   m_Name: New Note D(Clone) (15)
@@ -4566,22 +4309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &661093862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 661093860}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &661093863
 Rigidbody2D:
   serializedVersion: 4
@@ -4694,7 +4422,6 @@ GameObject:
   - component: {fileID: 712362321}
   - component: {fileID: 712362320}
   - component: {fileID: 712362319}
-  - component: {fileID: 712362318}
   - component: {fileID: 712362317}
   m_Layer: 0
   m_Name: New Note J(Clone) (6)
@@ -4715,22 +4442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &712362318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712362316}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &712362319
 Rigidbody2D:
   serializedVersion: 4
@@ -4843,7 +4555,6 @@ GameObject:
   - component: {fileID: 735868454}
   - component: {fileID: 735868453}
   - component: {fileID: 735868452}
-  - component: {fileID: 735868451}
   - component: {fileID: 735868450}
   m_Layer: 0
   m_Name: New Note K(Clone) (5)
@@ -4864,22 +4575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 107
   noteScore: 100
---- !u!114 &735868451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 735868449}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 107
 --- !u!50 &735868452
 Rigidbody2D:
   serializedVersion: 4
@@ -4992,7 +4688,6 @@ GameObject:
   - component: {fileID: 739305127}
   - component: {fileID: 739305126}
   - component: {fileID: 739305125}
-  - component: {fileID: 739305124}
   - component: {fileID: 739305123}
   m_Layer: 0
   m_Name: New Note S(Clone) (3)
@@ -5013,22 +4708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 115
   noteScore: 100
---- !u!114 &739305124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 739305122}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 115
 --- !u!50 &739305125
 Rigidbody2D:
   serializedVersion: 4
@@ -5428,7 +5108,6 @@ GameObject:
   - component: {fileID: 781029946}
   - component: {fileID: 781029945}
   - component: {fileID: 781029944}
-  - component: {fileID: 781029943}
   - component: {fileID: 781029942}
   m_Layer: 0
   m_Name: New Note D(Clone) (10)
@@ -5449,22 +5128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &781029943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781029941}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &781029944
 Rigidbody2D:
   serializedVersion: 4
@@ -5694,6 +5358,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d99c862e6186d45949e03db2cd2408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   name: Mult
 --- !u!114 &811466127
 MonoBehaviour:
@@ -5873,7 +5541,6 @@ GameObject:
   - component: {fileID: 824270516}
   - component: {fileID: 824270515}
   - component: {fileID: 824270514}
-  - component: {fileID: 824270513}
   - component: {fileID: 824270512}
   m_Layer: 0
   m_Name: New Note D(Clone) (12)
@@ -5894,22 +5561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &824270513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824270511}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &824270514
 Rigidbody2D:
   serializedVersion: 4
@@ -6101,7 +5753,6 @@ GameObject:
   - component: {fileID: 865830620}
   - component: {fileID: 865830619}
   - component: {fileID: 865830618}
-  - component: {fileID: 865830617}
   - component: {fileID: 865830616}
   m_Layer: 0
   m_Name: New Note D(Clone) (14)
@@ -6122,22 +5773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &865830617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 865830615}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &865830618
 Rigidbody2D:
   serializedVersion: 4
@@ -6250,7 +5886,6 @@ GameObject:
   - component: {fileID: 874177742}
   - component: {fileID: 874177741}
   - component: {fileID: 874177740}
-  - component: {fileID: 874177739}
   - component: {fileID: 874177738}
   m_Layer: 0
   m_Name: New Note S(Clone) (1)
@@ -6271,22 +5906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 115
   noteScore: 100
---- !u!114 &874177739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 874177737}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 115
 --- !u!50 &874177740
 Rigidbody2D:
   serializedVersion: 4
@@ -6399,7 +6019,6 @@ GameObject:
   - component: {fileID: 882755845}
   - component: {fileID: 882755844}
   - component: {fileID: 882755843}
-  - component: {fileID: 882755842}
   - component: {fileID: 882755841}
   m_Layer: 0
   m_Name: New Note J(Clone) (4)
@@ -6420,22 +6039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &882755842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 882755840}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &882755843
 Rigidbody2D:
   serializedVersion: 4
@@ -6785,7 +6389,6 @@ GameObject:
   - component: {fileID: 973706551}
   - component: {fileID: 973706550}
   - component: {fileID: 973706549}
-  - component: {fileID: 973706548}
   - component: {fileID: 973706547}
   m_Layer: 0
   m_Name: New Note S(Clone) (4)
@@ -6806,22 +6409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 115
   noteScore: 100
---- !u!114 &973706548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 973706546}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 115
 --- !u!50 &973706549
 Rigidbody2D:
   serializedVersion: 4
@@ -6952,11 +6540,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1497465945}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -317.9}
+  m_AnchoredPosition: {x: 0, y: -418.90002}
   m_SizeDelta: {x: 581.4, y: 218.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &992178538
@@ -7257,6 +6845,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d99c862e6186d45949e03db2cd2408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   name: Score
 --- !u!1 &1073113909
 GameObject:
@@ -7270,7 +6862,6 @@ GameObject:
   - component: {fileID: 1073113914}
   - component: {fileID: 1073113913}
   - component: {fileID: 1073113912}
-  - component: {fileID: 1073113911}
   - component: {fileID: 1073113910}
   m_Layer: 0
   m_Name: New Note D(Clone) (13)
@@ -7291,22 +6882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &1073113911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073113909}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &1073113912
 Rigidbody2D:
   serializedVersion: 4
@@ -7543,7 +7119,6 @@ GameObject:
   - component: {fileID: 1081326821}
   - component: {fileID: 1081326820}
   - component: {fileID: 1081326819}
-  - component: {fileID: 1081326818}
   - component: {fileID: 1081326817}
   m_Layer: 0
   m_Name: New Note D(Clone)
@@ -7564,22 +7139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &1081326818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081326816}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &1081326819
 Rigidbody2D:
   serializedVersion: 4
@@ -7692,7 +7252,6 @@ GameObject:
   - component: {fileID: 1096151838}
   - component: {fileID: 1096151837}
   - component: {fileID: 1096151836}
-  - component: {fileID: 1096151835}
   - component: {fileID: 1096151834}
   m_Layer: 0
   m_Name: New Note D(Clone) (4)
@@ -7713,22 +7272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &1096151835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1096151833}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &1096151836
 Rigidbody2D:
   serializedVersion: 4
@@ -7920,7 +7464,6 @@ GameObject:
   - component: {fileID: 1107530062}
   - component: {fileID: 1107530061}
   - component: {fileID: 1107530060}
-  - component: {fileID: 1107530059}
   - component: {fileID: 1107530058}
   m_Layer: 0
   m_Name: New Note D(Clone) (3)
@@ -7941,22 +7484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &1107530059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107530057}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &1107530060
 Rigidbody2D:
   serializedVersion: 4
@@ -8069,8 +7597,6 @@ GameObject:
   - component: {fileID: 1111689095}
   - component: {fileID: 1111689094}
   - component: {fileID: 1111689093}
-  - component: {fileID: 1111689092}
-  - component: {fileID: 1111689091}
   m_Layer: 0
   m_Name: Finish Note
   m_TagString: FinishNote
@@ -8092,34 +7618,6 @@ Transform:
   m_Father: {fileID: 258400441}
   m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1111689091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111689089}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
-  noteScore: 100
---- !u!114 &1111689092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111689089}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &1111689093
 Rigidbody2D:
   serializedVersion: 4
@@ -8217,7 +7715,6 @@ GameObject:
   - component: {fileID: 1120739037}
   - component: {fileID: 1120739036}
   - component: {fileID: 1120739035}
-  - component: {fileID: 1120739034}
   - component: {fileID: 1120739033}
   m_Layer: 0
   m_Name: New Note J(Clone) (15)
@@ -8238,22 +7735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &1120739034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120739032}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &1120739035
 Rigidbody2D:
   serializedVersion: 4
@@ -8682,7 +8164,6 @@ GameObject:
   - component: {fileID: 1161888648}
   - component: {fileID: 1161888647}
   - component: {fileID: 1161888646}
-  - component: {fileID: 1161888645}
   - component: {fileID: 1161888644}
   m_Layer: 0
   m_Name: New Note K(Clone) (3)
@@ -8703,22 +8184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 107
   noteScore: 100
---- !u!114 &1161888645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161888643}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 107
 --- !u!50 &1161888646
 Rigidbody2D:
   serializedVersion: 4
@@ -9147,7 +8613,6 @@ GameObject:
   - component: {fileID: 1294825472}
   - component: {fileID: 1294825471}
   - component: {fileID: 1294825470}
-  - component: {fileID: 1294825469}
   - component: {fileID: 1294825468}
   m_Layer: 0
   m_Name: New Note D(Clone) (6)
@@ -9168,22 +8633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &1294825469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294825467}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &1294825470
 Rigidbody2D:
   serializedVersion: 4
@@ -9442,6 +8892,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1341951309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1341951310}
+  - component: {fileID: 1341951311}
+  - component: {fileID: 1341951312}
+  m_Layer: 5
+  m_Name: Bad Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1341951310
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341951309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1497465945}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 50, y: 270.5}
+  m_SizeDelta: {x: 388.90002, y: 99}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!222 &1341951311
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341951309}
+  m_CullTransparentMesh: 0
+--- !u!114 &1341951312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341951309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 89
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 89
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: xxx
 --- !u!1 &1368709673
 GameObject:
   m_ObjectHideFlags: 0
@@ -9454,7 +8983,6 @@ GameObject:
   - component: {fileID: 1368709678}
   - component: {fileID: 1368709677}
   - component: {fileID: 1368709676}
-  - component: {fileID: 1368709675}
   - component: {fileID: 1368709674}
   m_Layer: 0
   m_Name: New Note S(Clone) (2)
@@ -9475,22 +9003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 115
   noteScore: 100
---- !u!114 &1368709675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368709673}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 115
 --- !u!50 &1368709676
 Rigidbody2D:
   serializedVersion: 4
@@ -9621,11 +9134,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1497465945}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -153}
+  m_AnchoredPosition: {x: 0, y: -254.00003}
   m_SizeDelta: {x: 581.4, y: 99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1383141869
@@ -9761,7 +9274,6 @@ GameObject:
   - component: {fileID: 1410944048}
   - component: {fileID: 1410944047}
   - component: {fileID: 1410944046}
-  - component: {fileID: 1410944045}
   - component: {fileID: 1410944044}
   m_Layer: 0
   m_Name: New Note J(Clone) (7)
@@ -9782,22 +9294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &1410944045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410944043}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &1410944046
 Rigidbody2D:
   serializedVersion: 4
@@ -10068,7 +9565,6 @@ GameObject:
   - component: {fileID: 1450297297}
   - component: {fileID: 1450297296}
   - component: {fileID: 1450297295}
-  - component: {fileID: 1450297294}
   - component: {fileID: 1450297293}
   m_Layer: 0
   m_Name: New Note J(Clone) (5)
@@ -10089,22 +9585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &1450297294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450297292}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &1450297295
 Rigidbody2D:
   serializedVersion: 4
@@ -10261,6 +9742,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d99c862e6186d45949e03db2cd2408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
   name: Streak
 --- !u!114 &1457192841
 MonoBehaviour:
@@ -10316,7 +9801,6 @@ GameObject:
   - component: {fileID: 1458370293}
   - component: {fileID: 1458370292}
   - component: {fileID: 1458370291}
-  - component: {fileID: 1458370290}
   - component: {fileID: 1458370289}
   m_Layer: 0
   m_Name: New Note K(Clone) (2)
@@ -10337,22 +9821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 107
   noteScore: 100
---- !u!114 &1458370290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458370288}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 107
 --- !u!50 &1458370291
 Rigidbody2D:
   serializedVersion: 4
@@ -10562,11 +10031,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1497465945}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: 11}
+  m_AnchoredPosition: {x: 50, y: -90.00003}
   m_SizeDelta: {x: 581.4, y: 99}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1484782559
@@ -10623,7 +10092,6 @@ GameObject:
   - component: {fileID: 1486825792}
   - component: {fileID: 1486825791}
   - component: {fileID: 1486825790}
-  - component: {fileID: 1486825789}
   - component: {fileID: 1486825788}
   m_Layer: 0
   m_Name: New Note L(Clone)
@@ -10644,22 +10112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 108
   noteScore: 100
---- !u!114 &1486825789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1486825787}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 108
 --- !u!50 &1486825790
 Rigidbody2D:
   serializedVersion: 4
@@ -10793,6 +10246,8 @@ RectTransform:
   - {fileID: 54001112}
   - {fileID: 958776143}
   - {fileID: 1716171623}
+  - {fileID: 1810561895}
+  - {fileID: 1341951310}
   - {fileID: 1961159759}
   - {fileID: 196583954}
   - {fileID: 1869196932}
@@ -10805,7 +10260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: -0.00012207031}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1497465946
@@ -11252,7 +10707,6 @@ GameObject:
   - component: {fileID: 1686132566}
   - component: {fileID: 1686132565}
   - component: {fileID: 1686132564}
-  - component: {fileID: 1686132563}
   - component: {fileID: 1686132562}
   m_Layer: 0
   m_Name: New Note J(Clone) (1)
@@ -11273,22 +10727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &1686132563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686132561}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &1686132564
 Rigidbody2D:
   serializedVersion: 4
@@ -11961,7 +11400,6 @@ GameObject:
   - component: {fileID: 1757838515}
   - component: {fileID: 1757838514}
   - component: {fileID: 1757838513}
-  - component: {fileID: 1757838512}
   - component: {fileID: 1757838511}
   m_Layer: 0
   m_Name: New Note D(Clone) (18)
@@ -11982,22 +11420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &1757838512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757838510}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &1757838513
 Rigidbody2D:
   serializedVersion: 4
@@ -12110,7 +11533,6 @@ GameObject:
   - component: {fileID: 1758029706}
   - component: {fileID: 1758029705}
   - component: {fileID: 1758029704}
-  - component: {fileID: 1758029703}
   - component: {fileID: 1758029702}
   m_Layer: 0
   m_Name: New Note D(Clone) (11)
@@ -12131,22 +11553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &1758029703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758029701}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &1758029704
 Rigidbody2D:
   serializedVersion: 4
@@ -12417,7 +11824,6 @@ GameObject:
   - component: {fileID: 1807504999}
   - component: {fileID: 1807504998}
   - component: {fileID: 1807504997}
-  - component: {fileID: 1807504996}
   - component: {fileID: 1807504995}
   m_Layer: 0
   m_Name: New Note L(Clone) (1)
@@ -12438,22 +11844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 108
   noteScore: 100
---- !u!114 &1807504996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807504994}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 108
 --- !u!50 &1807504997
 Rigidbody2D:
   serializedVersion: 4
@@ -12554,6 +11945,85 @@ Transform:
   m_Father: {fileID: 258400441}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1810561894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1810561895}
+  - component: {fileID: 1810561897}
+  - component: {fileID: 1810561896}
+  m_Layer: 5
+  m_Name: Bad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1810561895
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810561894}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1497465945}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 270.5}
+  m_SizeDelta: {x: 388.90002, y: 99}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &1810561896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810561894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 89
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 89
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Bad:'
+--- !u!222 &1810561897
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810561894}
+  m_CullTransparentMesh: 0
 --- !u!1 &1818121329
 GameObject:
   m_ObjectHideFlags: 0
@@ -12566,7 +12036,6 @@ GameObject:
   - component: {fileID: 1818121334}
   - component: {fileID: 1818121333}
   - component: {fileID: 1818121332}
-  - component: {fileID: 1818121331}
   - component: {fileID: 1818121330}
   m_Layer: 0
   m_Name: New Note J(Clone)
@@ -12587,22 +12056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &1818121331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818121329}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &1818121332
 Rigidbody2D:
   serializedVersion: 4
@@ -12812,11 +12266,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1497465945}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 109}
+  m_AnchoredPosition: {x: 0, y: 7.9999695}
   m_SizeDelta: {x: 581.4, y: 99}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1869196933
@@ -13031,7 +12485,6 @@ GameObject:
   - component: {fileID: 1902092987}
   - component: {fileID: 1902092986}
   - component: {fileID: 1902092985}
-  - component: {fileID: 1902092984}
   - component: {fileID: 1902092983}
   m_Layer: 0
   m_Name: New Note J(Clone) (12)
@@ -13052,22 +12505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &1902092984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902092982}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &1902092985
 Rigidbody2D:
   serializedVersion: 4
@@ -13180,7 +12618,6 @@ GameObject:
   - component: {fileID: 1915958835}
   - component: {fileID: 1915958834}
   - component: {fileID: 1915958833}
-  - component: {fileID: 1915958832}
   - component: {fileID: 1915958831}
   m_Layer: 0
   m_Name: New Note J(Clone) (14)
@@ -13201,22 +12638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &1915958832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915958830}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &1915958833
 Rigidbody2D:
   serializedVersion: 4
@@ -13329,7 +12751,6 @@ GameObject:
   - component: {fileID: 1927487356}
   - component: {fileID: 1927487355}
   - component: {fileID: 1927487354}
-  - component: {fileID: 1927487353}
   - component: {fileID: 1927487352}
   m_Layer: 0
   m_Name: New Note D(Clone) (16)
@@ -13350,22 +12771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &1927487353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927487351}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &1927487354
 Rigidbody2D:
   serializedVersion: 4
@@ -13557,7 +12963,6 @@ GameObject:
   - component: {fileID: 1949674849}
   - component: {fileID: 1949674848}
   - component: {fileID: 1949674847}
-  - component: {fileID: 1949674846}
   - component: {fileID: 1949674845}
   m_Layer: 0
   m_Name: New Note D(Clone) (5)
@@ -13578,22 +12983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &1949674846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949674844}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &1949674847
 Rigidbody2D:
   serializedVersion: 4
@@ -13706,7 +13096,6 @@ GameObject:
   - component: {fileID: 1956706903}
   - component: {fileID: 1956706902}
   - component: {fileID: 1956706901}
-  - component: {fileID: 1956706900}
   - component: {fileID: 1956706899}
   m_Layer: 0
   m_Name: New Note S(Clone) (5)
@@ -13727,22 +13116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 115
   noteScore: 100
---- !u!114 &1956706900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1956706898}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 115
 --- !u!50 &1956706901
 Rigidbody2D:
   serializedVersion: 4
@@ -13873,11 +13247,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1497465945}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 273}
+  m_AnchoredPosition: {x: 0, y: 171.99997}
   m_SizeDelta: {x: 388.90002, y: 99}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1961159760
@@ -14277,6 +13651,7 @@ MonoBehaviour:
   scorePercentageText: {fileID: 1484782560}
   perfectScoreText: {fileID: 1716171625}
   goodScoreText: {fileID: 54001114}
+  badScoreText: {fileID: 1341951312}
   missedText: {fileID: 196583956}
   rankText: {fileID: 992178539}
   scoreFinalText: {fileID: 656403792}
@@ -14284,6 +13659,7 @@ MonoBehaviour:
   score: 0
   currentScore: 0
   totalNotes: 0
+  hit: 0
   perfectHit: 0
   goodHit: 0
   badHit: 0
@@ -14419,7 +13795,6 @@ GameObject:
   - component: {fileID: 2066862572}
   - component: {fileID: 2066862571}
   - component: {fileID: 2066862570}
-  - component: {fileID: 2066862569}
   - component: {fileID: 2066862568}
   m_Layer: 0
   m_Name: New Note J(Clone) (3)
@@ -14440,22 +13815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &2066862569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066862567}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &2066862570
 Rigidbody2D:
   serializedVersion: 4
@@ -14568,7 +13928,6 @@ GameObject:
   - component: {fileID: 2069643287}
   - component: {fileID: 2069643286}
   - component: {fileID: 2069643285}
-  - component: {fileID: 2069643284}
   - component: {fileID: 2069643283}
   m_Layer: 0
   m_Name: New Note D(Clone) (2)
@@ -14589,22 +13948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &2069643284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069643282}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &2069643285
 Rigidbody2D:
   serializedVersion: 4
@@ -14796,7 +14140,6 @@ GameObject:
   - component: {fileID: 2085383244}
   - component: {fileID: 2085383243}
   - component: {fileID: 2085383242}
-  - component: {fileID: 2085383241}
   - component: {fileID: 2085383240}
   m_Layer: 0
   m_Name: New Note D(Clone) (1)
@@ -14817,22 +14160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &2085383241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085383239}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &2085383242
 Rigidbody2D:
   serializedVersion: 4
@@ -14945,7 +14273,6 @@ GameObject:
   - component: {fileID: 2098506537}
   - component: {fileID: 2098506536}
   - component: {fileID: 2098506535}
-  - component: {fileID: 2098506534}
   - component: {fileID: 2098506533}
   m_Layer: 0
   m_Name: New Note D(Clone) (19)
@@ -14966,22 +14293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 100
   noteScore: 100
---- !u!114 &2098506534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098506532}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 100
 --- !u!50 &2098506535
 Rigidbody2D:
   serializedVersion: 4
@@ -15094,7 +14406,6 @@ GameObject:
   - component: {fileID: 2107247599}
   - component: {fileID: 2107247598}
   - component: {fileID: 2107247597}
-  - component: {fileID: 2107247596}
   - component: {fileID: 2107247595}
   m_Layer: 0
   m_Name: New Note J(Clone) (13)
@@ -15115,22 +14426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 106
   noteScore: 100
---- !u!114 &2107247596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107247594}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60a45145789ba48439b07bc372fd6774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
 --- !u!50 &2107247597
 Rigidbody2D:
   serializedVersion: 4

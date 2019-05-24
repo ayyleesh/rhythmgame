@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public Text scoreText;
     public Text multiplierText;
     public Text comboText;
-    public Text scorePercentageText, perfectScoreText, goodScoreText, missedText, rankText, scoreFinalText;
+    public Text scorePercentageText, perfectScoreText, goodScoreText, badScoreText, missedText, rankText, scoreFinalText;
 
     public bool startPlaying;
 
@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     int combo = 0;
 
     public float totalNotes;
+    public float hit;
     public float perfectHit;
     public float goodHit;
     public float badHit;
@@ -125,6 +126,7 @@ public class GameManager : MonoBehaviour
         currentScore += score * multiplier;
         AddCombo();
         UpdateGUI();
+        hit++;
     }
 
     
@@ -135,6 +137,7 @@ public class GameManager : MonoBehaviour
         gameMusic.Stop();
         goodScoreText.text = "" + goodHit;
         perfectScoreText.text = "" + perfectHit;
+        badScoreText.text = "" + badHit;
         missedText.text = "" + missedHit;
 
         scoreFinalText.text = "" + currentScore;

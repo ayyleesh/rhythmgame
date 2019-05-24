@@ -7,7 +7,7 @@ public class Activator : MonoBehaviour
     SpriteRenderer spriteRenderer;
     public KeyCode key;
     bool active = false;
-    GameObject note, specialNote, gameManager;
+    GameObject note;
     Color old;
     public bool createMode;
     public GameObject newNote;
@@ -21,7 +21,6 @@ public class Activator : MonoBehaviour
 
     void Start()
     {
-        gameManager = GameObject.Find("GameManager");
         old = spriteRenderer.color;
     }
 
@@ -86,17 +85,15 @@ public class Activator : MonoBehaviour
 
     }
 
-    //void AddScore()
-    //{
-
-    //    PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + GameManager.instance.GetScore());
-    //}
-
-    void OnTriggerExit2D(Collider2D col)
+    void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("missed");
-        active = false;
-        GameManager.instance.MissedHit();
+        if (other.gameObject.tag == "Note")
+        {
+            Debug.Log("missed");
+            active = false;
+            GameManager.instance.MissedHit();
+        }
+        
     }
 
     IEnumerator Pressed()
