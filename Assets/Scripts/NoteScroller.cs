@@ -5,13 +5,14 @@ using UnityEngine;
 public class NoteScroller : MonoBehaviour
 {
     public float beatTempo;
+    public float difficulty;
     public float scrollSpeed;
     public bool hasStarted;
     
 
     void Start()
     {
-        //scrollSpeed = beatTempo / 60f;
+        scrollSpeed = beatTempo / 60f * difficulty;
     }
 
     // Update is called once per frame
