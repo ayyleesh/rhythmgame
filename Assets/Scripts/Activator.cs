@@ -12,6 +12,8 @@ public class Activator : MonoBehaviour
     public bool createMode;
     public GameObject newNote;
     public GameObject scroller;
+    public GameObject hitIndicators;
+    public GameObject perfectIndicator, goodIndicator, badIndicator, missedIndicator;
 
     // Use this for initialization
     void Awake()
@@ -46,16 +48,22 @@ public class Activator : MonoBehaviour
                 if (Mathf.Abs(note.transform.position.y) > 0.4)
                 {
                     Debug.Log("bad");
+                    var bad = Instantiate(badIndicator, hitIndicators.transform);
+                    Destroy(bad, 1);
                     GameManager.instance.BadHit();
                 }
                 if (Mathf.Abs(note.transform.position.y) > 0.2)
                 {
                     Debug.Log("good");
+                    var good = Instantiate(goodIndicator, hitIndicators.transform);
+                    Destroy(good, 1);
                     GameManager.instance.GoodHit();
                 }
                 else if (Mathf.Abs(note.transform.position.y) > 0.1)
                 {
                     Debug.Log("perfect");
+                    var perfect = Instantiate(perfectIndicator, hitIndicators.transform);
+                    Destroy(perfect, 1);
                     GameManager.instance.PerfectHit();
                 }
                 active = false;
@@ -64,6 +72,8 @@ public class Activator : MonoBehaviour
             {
                 GameManager.instance.ResetStreak();
                 Debug.Log("missed");
+                var missed = Instantiate(missedIndicator, hitIndicators.transform);
+                Destroy(missed, 1);
                 GameManager.instance.MissedHit();
             }
         }
