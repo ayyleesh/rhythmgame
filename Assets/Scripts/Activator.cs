@@ -45,21 +45,21 @@ public class Activator : MonoBehaviour
             if (Input.GetKeyDown(key) && active)
             {
                 note.SetActive(false);
-                if (Mathf.Abs(note.transform.position.y) > 0.4)
+                if (Mathf.Abs(note.transform.position.y) > 0.3)
                 {
                     Debug.Log("bad");
                     var bad = Instantiate(badIndicator, hitIndicators.transform);
                     Destroy(bad, 1);
                     GameManager.instance.BadHit();
                 }
-                if (Mathf.Abs(note.transform.position.y) > 0.2)
+                if (Mathf.Abs(note.transform.position.y) > 0.15)
                 {
                     Debug.Log("good");
                     var good = Instantiate(goodIndicator, hitIndicators.transform);
                     Destroy(good, 1);
                     GameManager.instance.GoodHit();
                 }
-                else if (Mathf.Abs(note.transform.position.y) > 0.1)
+                else if (Mathf.Abs(note.transform.position.y) >= 0)
                 {
                     Debug.Log("perfect");
                     var perfect = Instantiate(perfectIndicator, hitIndicators.transform);

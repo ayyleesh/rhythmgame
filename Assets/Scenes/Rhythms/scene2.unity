@@ -458,7 +458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteScore: 100
-  letter: 
+  letter: Ku
 --- !u!50 &46845629
 Rigidbody2D:
   serializedVersion: 4
@@ -2073,7 +2073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteScore: 100
-  letter: 
+  letter: Kyo
 --- !u!50 &329589984
 Rigidbody2D:
   serializedVersion: 4
@@ -3499,7 +3499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteScore: 100
-  letter: 
+  letter: Ki
 --- !u!50 &544683889
 Rigidbody2D:
   serializedVersion: 4
@@ -4430,7 +4430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteScore: 100
-  letter: 
+  letter: Wa
 --- !u!50 &736333398
 Rigidbody2D:
   serializedVersion: 4
@@ -6078,7 +6078,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 2}
+  m_Offset: {x: 0, y: 1.62}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6089,7 +6089,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9, y: 2}
+  m_Size: {x: 9, y: 2.8}
   m_EdgeRadius: 0
 --- !u!4 &869678726
 Transform:
@@ -9038,7 +9038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteScore: 100
-  letter: 
+  letter: A
 --- !u!50 &1355763632
 Rigidbody2D:
   serializedVersion: 4
@@ -10655,7 +10655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteScore: 100
-  letter: 
+  letter: Ma
 --- !u!50 &1647018286
 Rigidbody2D:
   serializedVersion: 4
@@ -12089,7 +12089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteScore: 100
-  letter: 
+  letter: A-Re
 --- !u!50 &1843713910
 Rigidbody2D:
   serializedVersion: 4
@@ -12728,7 +12728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteScore: 100
-  letter: 
+  letter: Se
 --- !u!50 &1931047174
 Rigidbody2D:
   serializedVersion: 4
@@ -13209,7 +13209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteScore: 100
-  letter: 
+  letter: Kyo
 --- !u!50 &1956378194
 Rigidbody2D:
   serializedVersion: 4
@@ -13501,7 +13501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteScore: 100
-  letter: 
+  letter: A-Re
 --- !u!50 &1967789188
 Rigidbody2D:
   serializedVersion: 4

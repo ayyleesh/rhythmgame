@@ -12,15 +12,15 @@ public class SongSelector : MonoBehaviour
     private void Start()
     {
         Sprite[] thumbnails = Resources.LoadAll<Sprite>("LevelThumbnails");
-        //foreach (Sprite thumbnail in thumbnails)
-        //{
+        foreach (Sprite thumbnail in thumbnails)
+        {
             GameObject container = Instantiate(selectSongButton) as GameObject;
             container.transform.parent = buttonContainer.transform;
 
-        string songName = "scene1" /*thumbnail.name;*/;
+        string songName = "scene"+thumbnail.name;
         container.GetComponent<Button>().onClick.AddListener(() => LoadLevel(songName));
             //container.GetComponent<Image>().sprite = thumbnail;
-        //}
+        }
     }
 
     private void LoadLevel(string songName)
