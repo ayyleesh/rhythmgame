@@ -14,8 +14,9 @@ public class LevelLoader : MonoBehaviour
 
     public int[] levelNumbers;
 
-    int levelTotal;
-    int containerCount;
+    public int levelTotal;
+    public int containerCount;
+    public int buttonCount;
     int levelCount;
 
     SnapScroll snapScroll;
@@ -23,10 +24,6 @@ public class LevelLoader : MonoBehaviour
     void Start()
     {
         levelCount = levelNumbers.Length;
-        for (int i = 0; i < levelCount; i++)
-        {
-            levelTotal = levelTotal + levelNumbers[i];
-        }
         StartCoroutine(LateStart(0.01f));
     }
 
@@ -46,7 +43,9 @@ public class LevelLoader : MonoBehaviour
             for (int i = 0; i < levelNumbers[k]; i++)
             {
                 instButton[i] = Instantiate(levelButton, instContainer[k].transform, false);
-                instButton[i].GetComponent<Button>().onClick.AddListener(() => LoadLevel("scene" + snapScroll.selectedPanelID + i));
+                int counter = i;
+                instButton[i].GetComponent<ButtonCount>().buttonCount = counter;
+                instButton[counter].GetComponent<Button>().onClick.AddListener(() => LoadLevel("scene" + snapScroll.selectedPanelID + counter));
             }
         }
 
@@ -55,8 +54,9 @@ public class LevelLoader : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        instContainer[snapScroll.selectedPanelID].SetActive(true);
         
+        instContainer[snapScroll.selectedPanelID].SetActive(true);
+
         for (int i = 0; i < levelCount; i++)
         {
             if (i != snapScroll.selectedPanelID)

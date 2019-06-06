@@ -534,11 +534,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelContainer: {fileID: 713749109812356815, guid: e66e63a5fd8d52d4da8f69c6728a800a,
     type: 3}
-  levelButton: {fileID: 8178940128956533246, guid: f4eb733ed720a4e4fbb4321e7612c90e,
+  levelButton: {fileID: 8178940128956533246, guid: f3b00706a570f274d9fc3ba3a9ab0584,
     type: 3}
   instContainer: []
   instButton: []
   levelNumbers: 0300000005000000050000000200000001000000
+  levelTotal: 5
+  containerCount: 5
+  buttonCount: 0
 --- !u!224 &374667709 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 320632512322966666, guid: e99e609fce17d1a49ab053a7a09df03a,
