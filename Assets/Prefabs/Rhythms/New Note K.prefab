@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055b8a84044b9d644bf35dd426238be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBePressed: 0
-  key: 107
   noteScore: 100
+  letter: 
 --- !u!1001 &2917538771623101559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82,6 +81,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Radius
       value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366466613133960, guid: 2ea4bfc299cda1643870d805cc98084e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114830777453252158, guid: 2ea4bfc299cda1643870d805cc98084e,
         type: 3}
