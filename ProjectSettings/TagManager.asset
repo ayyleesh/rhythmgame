@@ -7,6 +7,14 @@ TagManager:
   - Note
   - Activator
   - FinishNote
+  - Particle
+  - Line
+  - Number
+  - CirclePoint
+  - LineRenderer
+  - TracingPoint
+  - Letter
+  - Background
   layers:
   - Default
   - TransparentFX
@@ -44,9 +52,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Activators
-    uniqueID: 2460234195
+  - name: Background
+    uniqueID: 1012057877
     locked: 0
   - name: Note
     uniqueID: 4127294179
+    locked: 0
+  - name: Activators
+    uniqueID: 2460234195
+    locked: 0
+  - name: Particle
+    uniqueID: 1369881461
     locked: 0
