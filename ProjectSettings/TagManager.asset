@@ -9,6 +9,12 @@ TagManager:
   - FinishNote
   - Particle
   - Line
+  - Number
+  - CirclePoint
+  - LineRenderer
+  - TracingPoint
+  - Letter
+  - Background
   layers:
   - Default
   - TransparentFX
