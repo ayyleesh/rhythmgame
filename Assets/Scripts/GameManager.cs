@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,11 +10,13 @@ public class GameManager : MonoBehaviour
     public NoteScroller noteScroller;
     public AudioSource gameMusic;
     public GameObject result;
+    public Slider slider;
+    public GameObject comboObject;
 
     public Text scoreText;
     public Text multiplierText;
     public Text comboText;
-    public Text scorePercentageText, perfectScoreText, goodScoreText, badScoreText, missedText, rankText, scoreFinalText;
+    public Text scorePercentageText, comboScoreText, perfectScoreText, goodScoreText, badScoreText, missedText, rankText, scoreFinalText;
 
     public bool startPlaying;
 
@@ -21,6 +24,7 @@ public class GameManager : MonoBehaviour
     public int currentScore;
     int multiplier = 1;
     int combo = 0;
+    string formatScore;
 
     public float totalNotes;
     public float hit;
@@ -28,7 +32,8 @@ public class GameManager : MonoBehaviour
     public float goodHit;
     public float badHit;
     public float missedHit;
-    
+    float percentHit;
+
     void Start()
     {
         instance = this;
@@ -91,8 +96,19 @@ public class GameManager : MonoBehaviour
     public void UpdateGUI()
     {
         multiplierText.text = multiplier + "x";
-        comboText.text = "Combo: " + combo;
-        scoreText.text = "" + currentScore;
+
+        if (combo >= 6)
+        {
+            comboObject.SetActive(true);
+        }
+        else
+        {
+            comboObject.SetActive(false);
+        }
+        comboText.text = "" + combo;
+        scoreText.text = formatScore;
+        percentHit = (goodHit + perfectHit) / totalNotes * 100f;
+        slider.value = percentHit;
     }
 
     public void GoodHit()
@@ -124,6 +140,7 @@ public class GameManager : MonoBehaviour
     public void HitNote()
     {
         currentScore += score * multiplier;
+        formatScore = currentScore.ToString("N0", CultureInfo.CreateSpecificCulture("en-US"));
         AddCombo();
         UpdateGUI();
         hit++;
@@ -135,14 +152,14 @@ public class GameManager : MonoBehaviour
     {
         result.SetActive(true);
         gameMusic.Stop();
+        
         goodScoreText.text = "" + goodHit;
         perfectScoreText.text = "" + perfectHit;
         badScoreText.text = "" + badHit;
         missedText.text = "" + missedHit;
 
-        scoreFinalText.text = "" + currentScore;
+        scoreFinalText.text = "" + formatScore;
         float total = goodHit + perfectHit;
-        float percentHit = (total / totalNotes) * 100f;
 
         scorePercentageText.text = percentHit.ToString("F1") + "%";
 

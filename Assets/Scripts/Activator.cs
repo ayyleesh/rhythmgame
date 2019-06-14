@@ -8,12 +8,13 @@ public class Activator : MonoBehaviour
     public KeyCode key;
     bool active = false;
     GameObject note;
-    Color old;
+    Sprite old;
     public bool createMode;
+    public Sprite buttonHit;
     public GameObject newNote;
     public GameObject scroller;
     public GameObject hitIndicators;
-    public GameObject perfectIndicator, goodIndicator, badIndicator, missedIndicator;
+    public GameObject starBurst, perfectIndicator, goodIndicator, badIndicator, missedIndicator;
 
     // Use this for initialization
     void Awake()
@@ -23,7 +24,7 @@ public class Activator : MonoBehaviour
 
     void Start()
     {
-        old = spriteRenderer.color;
+        old = spriteRenderer.sprite;
     }
 
     // Update is called once per frame
@@ -41,25 +42,27 @@ public class Activator : MonoBehaviour
             if (Input.GetKeyDown(key))
             {
                 StartCoroutine(Pressed());
+                var starburst = Instantiate(starBurst, transform);
+                Destroy(starburst, 1.1f);
             }
             if (Input.GetKeyDown(key) && active)
             {
                 note.SetActive(false);
-                if (Mathf.Abs(note.transform.position.y) > 0.3)
+                if (Mathf.Abs(note.transform.position.y) > 0.5)
                 {
                     Debug.Log("bad");
                     var bad = Instantiate(badIndicator, hitIndicators.transform);
                     Destroy(bad, 1);
                     GameManager.instance.BadHit();
                 }
-                if (Mathf.Abs(note.transform.position.y) > 0.15)
+                if (Mathf.Abs(note.transform.position.y) > 0.15 && Mathf.Abs(note.transform.position.y) < 0.5)
                 {
                     Debug.Log("good");
                     var good = Instantiate(goodIndicator, hitIndicators.transform);
                     Destroy(good, 1);
                     GameManager.instance.GoodHit();
                 }
-                else if (Mathf.Abs(note.transform.position.y) >= 0)
+                else if (Mathf.Abs(note.transform.position.y) >= 0 && Mathf.Abs(note.transform.position.y) < 0.15)
                 {
                     Debug.Log("perfect");
                     var perfect = Instantiate(perfectIndicator, hitIndicators.transform);
@@ -108,9 +111,9 @@ public class Activator : MonoBehaviour
 
     IEnumerator Pressed()
     {
-        
-        spriteRenderer.color = new Color(0, 0, 0);
+
+        spriteRenderer.sprite = buttonHit;
         yield return new WaitForSeconds(0.05f);
-        spriteRenderer.color = old;
+        spriteRenderer.sprite = old;
     }
 }
