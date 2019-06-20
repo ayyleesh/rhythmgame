@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee50d3b6adc64a24ba4541c50eebd5c1, type: 3}
+  m_Name: Level1_A_1
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - characterName: A
+    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+    lines: Welcome to the first lesson.
+  - characterName: A
+    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+    lines: Today, we're learning about the Hiragana letter A.
+  - characterName: A
+    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+    lines: Hiragana A looks like this.
+  - characterName: A
+    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+    lines: It looks like a __ isn't it?
+  - characterName: A
+    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+    lines: Now why don't you try writing the letter yourself?
+  - characterName: A
+    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+    lines: Just trace the line with your finger according to the order.
+  dialogEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+        m_MethodName: Test
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

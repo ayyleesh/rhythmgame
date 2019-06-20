@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2aea824172142b46a99bb551ef5ed25, type: 3}
+  m_Name: Level1_A_Q1
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - characterName: a
+    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+    lines: Now, do you think you can answer this correctly?
+  dialogEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  questionText: Which one of these are the letter A?
+  questionsInfo:
+  - buttonName: a
+    questionEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    nextDialogue: {fileID: 11400000, guid: 83d7942079b7ca24fb05693d7a3627b8, type: 2}
+  - buttonName: b
+    questionEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    nextDialogue: {fileID: 11400000, guid: c2896f1df2d04684ca675b135d7a2cef, type: 2}
+  - buttonName: c
+    questionEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    nextDialogue: {fileID: 0}
