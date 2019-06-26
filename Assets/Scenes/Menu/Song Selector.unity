@@ -1217,7 +1217,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1620201908}
   m_HandleRect: {fileID: 1620201907}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1500,7 +1500,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1498741398}
   m_Direction: 2
   m_Value: 0.5
-  m_Size: 0.86681575
+  m_Size: 0.8663761
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2315,7 +2315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelCounter: 3
   panelOffset: 37
-  scaleOffset: 5
+  scaleOffset: 4.5
   snapSpeed: 14.9
   scaleSpeed: 10
   panel: {fileID: 8178940128956533246, guid: f4eb733ed720a4e4fbb4321e7612c90e, type: 3}

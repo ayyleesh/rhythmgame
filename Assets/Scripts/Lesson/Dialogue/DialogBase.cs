@@ -14,11 +14,9 @@ public class DialogBase : ScriptableObject
         public Sprite avatar;
         [TextArea(4, 8)]
         public string lines;
-        
+        public UnityEvent dialogEvent;
+
     }
     [Header("Insert New Dialog Below")]
     public Info[] dialogueInfo;
-
-    [Header("Insert Dialog Event")]
-    public UnityEvent dialogEvent;
 }

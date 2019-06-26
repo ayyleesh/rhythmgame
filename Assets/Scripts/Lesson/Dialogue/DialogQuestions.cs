@@ -6,6 +6,7 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "New Dialogue Questions", menuName = "DialogQuestions")]
 public class DialogQuestions : DialogBase
 {
+
     [System.Serializable]
     public class Questions
     {

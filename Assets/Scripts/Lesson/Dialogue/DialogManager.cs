@@ -43,6 +43,7 @@ public class DialogManager : MonoBehaviour
     {
         dialogueBox.SetActive(true);
         dialogueInfo.Clear();
+        inDialogue = true;
 
         if (dialogBase is DialogQuestions)
         {
@@ -70,8 +71,6 @@ public class DialogManager : MonoBehaviour
         else
         {
             isDialogueOption = false;
-            handler = dialogueBox.GetComponent<DialogueEventHandler>();
-            dialogBase.dialogEvent.Invoke();
         }
 
         foreach (DialogBase.Info info in dialogBase.dialogueInfo)
@@ -99,6 +98,7 @@ public class DialogManager : MonoBehaviour
         }
 
         DialogBase.Info info = dialogueInfo.Dequeue();
+        info.dialogEvent.Invoke();
         completeText = info.lines;
 
         dialogueName.text = info.characterName;
@@ -137,7 +137,6 @@ public class DialogManager : MonoBehaviour
         if (isDialogueOption)
         {
             dialogueQuestion.SetActive(true);
-            
         }
     }
 

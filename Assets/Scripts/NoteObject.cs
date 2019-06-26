@@ -6,6 +6,7 @@ public class NoteObject : MonoBehaviour
 {
     public int noteScore = 100;
     public string letter;
+    public bool isCorrectAnswer;
 
     void Start()
     {

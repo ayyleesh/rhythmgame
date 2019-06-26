@@ -10,7 +10,7 @@ public class TriggerDialog : MonoBehaviour
 
     void Update()
     {
-        if (dialogueBox.active)
+        if (dialogueBox.activeInHierarchy)
         {
             Time.timeScale = 0;
         }

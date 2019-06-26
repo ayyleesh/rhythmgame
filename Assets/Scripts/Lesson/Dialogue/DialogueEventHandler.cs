@@ -12,7 +12,7 @@ public class DialogueEventHandler : MonoBehaviour, IPointerDownHandler
     public void OnPointerDown(PointerEventData pointerEventData)
     {
         eventHandler.Invoke();
-        DialogManager.instance.CloseQuestions();
+        //DialogManager.instance.CloseQuestions();
 
         if (nextDialogue != null)
         {

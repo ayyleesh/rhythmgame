@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class WritingHandler : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class WritingHandler : MonoBehaviour
 		public AudioClip cheeringSound;
 		public AudioClip positiveSound;
 		public AudioClip wrongSound;
+        public DialogBase[] correctDialogues;
+        public DialogBase wrongDialogue;
 
 		IEnumerator Start ()
 		{   
@@ -202,7 +205,8 @@ public class WritingHandler : MonoBehaviour
 						PlayPositiveSound ();//play positive sound effect
 				} else {
 						PlayWrongSound ();//play negative or wrong answer sound effect
-						Destroy (currentLineRender);//destroy the current line
+                        DialogManager.instance.EnqueueDialogue(wrongDialogue);
+            Destroy (currentLineRender);//destroy the current line
 						currentLineRender = null;//release the current line
 				}
 
@@ -232,13 +236,15 @@ public class WritingHandler : MonoBehaviour
 				if (success) {
 						letterDone = true;//letter done flag
 						Debug.Log ("You done the " + letters [currentLetterIndex].name);
-				}
+            
+                        DialogManager.instance.EnqueueDialogue(correctDialogues[currentLetterIndex]);
+        }
 		}
 
 		//Back To Menu
 		private void BackToMenu ()
 		{
-				Application.LoadLevel ("AlphabetMenu");
+            SceneManager.LoadScene("AlphabetMenu");
 		}
 
 		//Refresh the lines and reset the tracing parts
@@ -334,7 +340,7 @@ public class WritingHandler : MonoBehaviour
 
 				if (currentLetterIndex == letters.Length - 1) {
 						currentLetterIndex = 0;
-						Application.LoadLevel ("AlphabetMenu");
+                        SceneManager.LoadScene("AlphabetMenu");
 				} else if (currentLetterIndex >= 0 && currentLetterIndex < letters.Length - 1) {
 						currentLetterIndex++;
 						LoadLetter ();

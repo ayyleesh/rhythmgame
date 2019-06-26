@@ -85,7 +85,7 @@ public class Activator : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         
-        if (other.gameObject.tag == "Note")
+        if (other.gameObject.tag == "Note" && other.gameObject.GetComponent<NoteObject>().isCorrectAnswer == true)
         {
             active = true;
             note = other.gameObject;
@@ -100,7 +100,7 @@ public class Activator : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Note")
+        if (other.gameObject.tag == "Note" && other.gameObject.GetComponent<NoteObject>().isCorrectAnswer == true)
         {
             Debug.Log("missed");
             active = false;
