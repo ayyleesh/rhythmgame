@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Event", menuName = "Events")]
 public class EventBehavior : ScriptableObject
 {
+
     public bool isDestroyed;
     public void Test()
     {
@@ -13,7 +14,7 @@ public class EventBehavior : ScriptableObject
 
     public void ShowBoard()
     {
-        GameObject board = FindObjectOfType<testEvent>().board;
+        GameObject board = FindObjectOfType<LessonManager>().board;
         if (board.activeInHierarchy)
         {
             Debug.Log("Board already active");
@@ -27,7 +28,7 @@ public class EventBehavior : ScriptableObject
 
     public void HideBoard()
     {
-        GameObject board = FindObjectOfType<testEvent>().board;
+        GameObject board = FindObjectOfType<LessonManager>().board;
         if (board.activeInHierarchy)
         {
             board.SetActive(false);
@@ -60,6 +61,37 @@ public class EventBehavior : ScriptableObject
     {
         WritingHandler writingHandler = GameObject.FindObjectOfType<WritingHandler>();
         writingHandler.LoadNextLetter();
+    }
 
+    
+    public void PlayAnimation()
+    {
+        int i = LessonManager.instance.index;
+        Debug.Log(i.ToString());
+        Animator anim = LessonManager.instance.strokeAnimations[i];
+        GameObject animObj = LessonManager.instance.letterAnimation.transform.GetChild(i).gameObject;
+        animObj.SetActive(true);
+        int animID = i + 1;
+        anim.Play("A"+animID);
+        LessonManager.instance.index += 1;
+    }
+
+    public void ClearAnimation()
+    {
+        GameObject letterAnimation = LessonManager.instance.letterAnimation;
+        letterAnimation.SetActive(false);
+    }
+
+    public void StartWriting()
+    {
+        FindObjectOfType<WritingHandler>().canWrite = true;
+        LessonManager.instance.cursor.SetActive(true);
+    }
+
+    public void DisableWriting()
+    {
+        WritingHandler writingHandler = FindObjectOfType<WritingHandler>();
+        writingHandler.canWrite = false;
+        LessonManager.instance.cursor.SetActive(false);
     }
 }

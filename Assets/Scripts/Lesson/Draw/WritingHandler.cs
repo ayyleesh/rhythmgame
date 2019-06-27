@@ -20,6 +20,7 @@ public class WritingHandler : MonoBehaviour
 		private bool clickStarted;//uses with mouse input drawings,when drawing clickStarted
 		public Transform hand;
 		public bool showCursor;
+        public bool canWrite;
 		public AudioClip cheeringSound;
 		public AudioClip positiveSound;
 		public AudioClip wrongSound;
@@ -48,7 +49,7 @@ public class WritingHandler : MonoBehaviour
 
 				RaycastHit2D hit2d = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);//raycast hid c
 
-				if (hit2d.collider != null) {
+				if (hit2d.collider != null && canWrite) {
 						if (Input.GetMouseButtonDown (0)) {
 								TouchLetterHandle (hit2d.collider.gameObject, true, Camera.main.ScreenToWorldPoint (Input.mousePosition));//touch for letter move(drawing);
 								clickStarted = true;

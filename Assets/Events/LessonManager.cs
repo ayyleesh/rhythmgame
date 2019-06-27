@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class testEvent : MonoBehaviour
+public class LessonManager : MonoBehaviour
 {
-    public static testEvent instance;
+    public static LessonManager instance;
     public GameObject board;
     public GameObject letterAnimation;
     public Animator[] strokeAnimations;
