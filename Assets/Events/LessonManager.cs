@@ -5,6 +5,7 @@ using UnityEngine;
 public class LessonManager : MonoBehaviour
 {
     public static LessonManager instance;
+    public string letterName;
     public GameObject board;
     public GameObject letterAnimation;
     public Animator[] strokeAnimations;

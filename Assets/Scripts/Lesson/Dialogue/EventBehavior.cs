@@ -72,7 +72,7 @@ public class EventBehavior : ScriptableObject
         GameObject animObj = LessonManager.instance.letterAnimation.transform.GetChild(i).gameObject;
         animObj.SetActive(true);
         int animID = i + 1;
-        anim.Play("A"+animID);
+        anim.Play(LessonManager.instance.letterName+animID);
         LessonManager.instance.index += 1;
     }
 
@@ -90,8 +90,11 @@ public class EventBehavior : ScriptableObject
 
     public void DisableWriting()
     {
-        WritingHandler writingHandler = FindObjectOfType<WritingHandler>();
-        writingHandler.canWrite = false;
-        LessonManager.instance.cursor.SetActive(false);
+        if (LessonManager.instance.board.activeInHierarchy)
+        {
+            WritingHandler writingHandler = FindObjectOfType<WritingHandler>();
+            writingHandler.canWrite = false;
+            LessonManager.instance.cursor.SetActive(false);
+        }
     }
 }
