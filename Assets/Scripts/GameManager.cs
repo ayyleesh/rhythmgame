@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public int currentScore;
     int multiplier = 1;
     int combo = 0;
+    int maxCombo = 0;
     string formatScore;
 
     public float totalNotes;
@@ -82,7 +83,10 @@ public class GameManager : MonoBehaviour
         {
             multiplier = 1;
         }
-
+        if (combo > maxCombo)
+        {
+            maxCombo = combo;
+        }
         UpdateGUI();
     }
 
@@ -152,7 +156,7 @@ public class GameManager : MonoBehaviour
     {
         result.SetActive(true);
         gameMusic.Stop();
-        
+        comboScoreText.text = "" + maxCombo;
         goodScoreText.text = "" + goodHit;
         perfectScoreText.text = "" + perfectHit;
         badScoreText.text = "" + badHit;

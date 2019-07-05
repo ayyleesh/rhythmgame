@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Rhythms/scene2.unity
     guid: 16328c63ce93ebf45aecbc1b007b8df1
   - enabled: 1
+    path: Assets/Scenes/Menu/Song Selector.unity
+    guid: 135d04e2dc39eda49888e617b41305f3
+  - enabled: 1
     path: Assets/Scenes/Lessons/scene00.unity
     guid: 70c7a15cf63e2e447b59d1c3b2eae41c
   m_configObjects: {}

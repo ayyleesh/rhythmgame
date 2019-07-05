@@ -11,6 +11,7 @@ public class Activator : MonoBehaviour
     Sprite old;
     public bool createMode;
     public Sprite buttonHit;
+    public AudioSource tapSFX;
     public GameObject newNote;
     public GameObject scroller;
     public GameObject hitIndicators;
@@ -113,6 +114,7 @@ public class Activator : MonoBehaviour
     {
 
         spriteRenderer.sprite = buttonHit;
+        tapSFX.Play();
         yield return new WaitForSeconds(0.05f);
         spriteRenderer.sprite = old;
     }
