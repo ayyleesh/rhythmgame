@@ -154,5 +154,10 @@ public class PauseButtonsScript : MonoBehaviour
         SceneManager.LoadScene("Song Selector");
     }
 
+    public void ExitLesson()
+    {
+        SceneManager.LoadScene("LevelSelector");
+    }
+
     
 }

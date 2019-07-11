@@ -97,4 +97,13 @@ public class EventBehavior : ScriptableObject
             LessonManager.instance.cursor.SetActive(false);
         }
     }
+
+    public void GiveReward()
+    {
+        PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins") + 50);
+        PlayerPrefs.SetInt("expPoints", PlayerPrefs.GetInt("expPoints") + 500);
+        LessonManager.instance.coins.text = "" + 50;
+        LessonManager.instance.expPoints.text = "" + 500;
+        LessonManager.instance.reward.SetActive(true);
+    }
 }

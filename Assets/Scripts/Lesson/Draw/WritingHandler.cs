@@ -204,9 +204,11 @@ public class WritingHandler : MonoBehaviour
 								currentLineRender = null;
 						}
 						PlayPositiveSound ();//play positive sound effect
-				} else {
+                        LessonManager.instance.correct++;
+        } else {
 						PlayWrongSound ();//play negative or wrong answer sound effect
                         DialogManager.instance.EnqueueDialogue(wrongDialogue);
+                        LessonManager.instance.wrong++;
             Destroy (currentLineRender);//destroy the current line
 						currentLineRender = null;//release the current line
 				}

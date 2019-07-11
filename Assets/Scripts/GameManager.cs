@@ -9,14 +9,18 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public NoteScroller noteScroller;
     public AudioSource gameMusic;
-    public GameObject result;
+    public GameObject result, reward;
     public Slider slider;
     public GameObject comboObject;
 
     public Text scoreText;
     public Text multiplierText;
     public Text comboText;
+    [Header("Result Scoring")]
     public Text scorePercentageText, comboScoreText, perfectScoreText, goodScoreText, badScoreText, missedText, rankText, scoreFinalText;
+
+    [Header("Rewards")]
+    public Text coinAmt, expPointAmt;
 
     public bool startPlaying;
 
@@ -33,6 +37,7 @@ public class GameManager : MonoBehaviour
     public float goodHit;
     public float badHit;
     public float missedHit;
+    public int totalCoins, totalExpPoints;
     float percentHit;
 
     void Start()
@@ -47,6 +52,8 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
+        totalCoins = PlayerPrefs.GetInt("coins");
+        totalExpPoints = PlayerPrefs.GetInt("expPoints");
         if (!startPlaying)
         {
             if (Input.anyKeyDown)
@@ -186,6 +193,17 @@ public class GameManager : MonoBehaviour
             }
         }
         rankText.text = rankVal;
+    }
+
+    public void DisplayReward()
+    {
+        reward.SetActive(true);
+        int coin = (int) Mathf.Floor(currentScore * 0.1f);
+        int exp = currentScore;
+        coinAmt.text = "" + coin;
+        expPointAmt.text = "" + exp;
+        PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins")+coin);
+        PlayerPrefs.SetInt("expPoints", PlayerPrefs.GetInt("expPoints")+exp);
     }
 
 }
