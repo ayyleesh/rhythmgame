@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97eefce8a564b854abcdfe7f286e5d78, type: 3}
+  m_Name: Character2
+  m_EditorClassIdentifier: 
+  itemID: 0
+  itemType: character
+  itemImage: {fileID: 21300000, guid: cf3761f5220da01418387bd3fef11ae9, type: 3}
+  itemName: 2nd Character
+  itemDesc: His name is Kisa
+  itemPrice: 100
