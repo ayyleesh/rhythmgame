@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/MainMenu.unity
     guid: e0bc29d98222e2b4fa5ec2e910e22629
   - enabled: 1
+    path: Assets/Scenes/Menu/Song Selector.unity
+    guid: 135d04e2dc39eda49888e617b41305f3
+  - enabled: 1
+    path: Assets/Scenes/Menu/Store.unity
+    guid: 8d9813c94af3de64fa8f6a77f8b3b6d1
+  - enabled: 1
+    path: Assets/Scenes/Menu/Inventory.unity
+    guid: 002ae37ebfd21fb4e96f53e166b1d1af
+  - enabled: 1
+    path: Assets/Scenes/Menu/LevelSelector.unity
+    guid: deaf7cc60649dd74eb1952560c266535
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
@@ -21,18 +33,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Rhythms/scene2.unity
     guid: 16328c63ce93ebf45aecbc1b007b8df1
   - enabled: 1
-    path: Assets/Scenes/Menu/Song Selector.unity
-    guid: 135d04e2dc39eda49888e617b41305f3
+    path: Assets/Scenes/Rhythms/scene3.unity
+    guid: 13e73a2c29ef21d4186e140662bae49e
   - enabled: 1
     path: Assets/Scenes/Lessons/scene00.unity
     guid: 70c7a15cf63e2e447b59d1c3b2eae41c
   - enabled: 1
-    path: Assets/Scenes/Menu/LevelSelector.unity
-    guid: deaf7cc60649dd74eb1952560c266535
+    path: Assets/Scenes/Settings/Setting.unity
+    guid: 5800ec6415305c64faa28913ccaefeb1
   - enabled: 1
-    path: Assets/Scenes/Menu/Store.unity
-    guid: 8d9813c94af3de64fa8f6a77f8b3b6d1
+    path: Assets/Scenes/Settings/CharacterSelect.unity
+    guid: 2e1a2dcd6175af1449817e60025074f6
   - enabled: 1
-    path: Assets/Scenes/Menu/Inventory.unity
-    guid: 002ae37ebfd21fb4e96f53e166b1d1af
+    path: Assets/Scenes/Settings/EquipItems.unity
+    guid: 2dde47b5b5b22d9489aef7b9ee2aa422
   m_configObjects: {}

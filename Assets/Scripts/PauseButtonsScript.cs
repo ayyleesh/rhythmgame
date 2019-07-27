@@ -27,7 +27,6 @@ public class PauseButtonsScript : MonoBehaviour
     {
         AdjustVolume(musicAdjustSlider, gameMusic);
         AdjustVolume(sfxAdjustSlider, gameSFX);
-        AdjustSpeed(dialogueSpeedSlider);
     }
 
     public void IncreaseVolume()
@@ -63,19 +62,6 @@ public class PauseButtonsScript : MonoBehaviour
         {
             nodesContainer.transform.GetChild(k).GetComponent<Image>().color = new Color32(0, 0, 0, 130);
         }
-    }
-
-    public void AdjustSpeed(Slider slider)
-    {
-        if (slider.value == 0)
-        {
-            DialogManager.instance.delay = 0.05f;
-        }
-        else if (slider.value == 2)
-        {
-            DialogManager.instance.delay = 0.01f;
-        }
-        
     }
 
     public void PauseGame()
@@ -151,11 +137,13 @@ public class PauseButtonsScript : MonoBehaviour
 
     public void ConfirmExit()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Song Selector");
     }
 
     public void ExitLesson()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("LevelSelector");
     }
 

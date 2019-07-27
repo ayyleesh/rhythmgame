@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: 71cfd2214c3e742b095c26e6db098029
+guid: 53860a30013bcc74a9fed170d201bc1c
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: popup_bg_dialog_0
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -46,11 +47,11 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 200
-  spriteBorder: {x: 45, y: 45, z: 45, w: 45}
+  spriteBorder: {x: 71, y: 71, z: 71, w: 71}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -115,11 +116,35 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: popup_bg_dialog_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 25
+        width: 118
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 50, y: 50, z: 50, w: 50}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9f9888fecfb52468f174c0dfcf5a3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -84, y: -167}
+      - {x: -84, y: 167}
+      - {x: 84, y: 167}
+      - {x: 84, y: -167}
     physicsShape: []
     bones: []
-    spriteID: 41811423174c55c4985166d99be89b2c
+    spriteID: 3ce958e77f2a056488c365ca949c0983
     vertices: []
     indices: 
     edges: []

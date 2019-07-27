@@ -6,9 +6,7 @@ using UnityEngine.UI;
 
 public class SnapScroll : MonoBehaviour
 {
-    [Range(1, 50)]
     [Header("Controllers")]
-    public int panelCounter;
     [Range(0, 500)]
     public int panelOffset;
     [Range(0f, 5f)]
@@ -19,7 +17,7 @@ public class SnapScroll : MonoBehaviour
     public float scaleSpeed;
     [Header("Other Objects")]
     public GameObject panel;
-    public string[] songTitle;
+    public RhythmSong[] rhythmSongs;
 
     private GameObject[] instPanel;
     private Vector2[] panelPosition;
@@ -28,11 +26,12 @@ public class SnapScroll : MonoBehaviour
     private Vector2 contentVector;
     private RectTransform contentRect;
 
-    public int selectedPanelID;
+    public int selectedPanelID, panelCounter;
     private bool isScrolling;
 
     void Start()
     {
+        panelCounter = rhythmSongs.Length;
         contentRect = GetComponent<RectTransform>();
         instPanel = new GameObject[panelCounter];
         panelPosition = new Vector2[panelCounter];
@@ -41,7 +40,9 @@ public class SnapScroll : MonoBehaviour
         for (int i = 0; i < panelCounter; i++)
         {
             instPanel[i] = Instantiate(panel, transform, false);
-            instPanel[i].GetComponentInChildren<Text>().text = songTitle[i];
+            instPanel[i].transform.GetChild(0).GetComponent<Image>().sprite = rhythmSongs[i].itemThumbnail;
+            instPanel[i].transform.GetChild(1).GetComponent<Text>().text = rhythmSongs[i].itemName;
+            instPanel[i].transform.GetChild(2).GetComponentInChildren<Text>().text = "Lv." + rhythmSongs[i].level;
             if (i == 0) continue;
             instPanel[i].transform.localPosition = new Vector2(instPanel[i].transform.localPosition.x, instPanel[i-1].transform.localPosition.y - panel.GetComponent<RectTransform>().sizeDelta.y - panelOffset);
             panelPosition[i] = -instPanel[i].transform.localPosition;

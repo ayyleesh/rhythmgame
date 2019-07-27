@@ -7,9 +7,10 @@ public class StatusBarScript : MonoBehaviour
 {
     public int expPointsTotal, currentLevel;
     public float levelPercent;
-    int[] levelMaxExp = new int[] { 10000, 20000, 30000};
+    int[] levelMaxExp = new int[] { 10000, 20000, 30000, 50000, 80000, 130000};
     public Text coinsTotalText, levelText;
     public Slider expSlider;
+    public GameObject toolTip;
 
     void Start()
     {
@@ -23,6 +24,7 @@ public class StatusBarScript : MonoBehaviour
                 currentLevel++;
             }
         }
+        toolTip.GetComponentInChildren<Text>().text = expPointsTotal + "/" + levelMaxExp[currentLevel];
 
     }
 
@@ -33,5 +35,17 @@ public class StatusBarScript : MonoBehaviour
         levelPercent = expPointsTotal * 100 / levelMaxExp[currentLevel];
         expSlider.value = levelPercent;
         coinsTotalText.text = "" + PlayerPrefs.GetInt("coins");
+    }
+
+    public void OnClick()
+    {
+        StartCoroutine(ShowToolTip());
+    }
+
+    IEnumerator ShowToolTip()
+    {
+        toolTip.SetActive(true);
+        yield return new WaitForSeconds(3);
+        toolTip.SetActive(false);
     }
 }

@@ -40,11 +40,17 @@ public class GameManager : MonoBehaviour
     public int totalCoins, totalExpPoints;
     float percentHit;
 
+    PurchasableItems purchasableItems;
+    EquippableItem item1, item2;
+
     void Start()
     {
         instance = this;
         totalNotes = FindObjectsOfType<NoteObject>().Length;
-
+        purchasableItems = FindObjectOfType<PurchasableItems>();
+        item1 = purchasableItems.purchasableItems[PlayerPrefs.GetInt("itemEquipped1")] as EquippableItem;
+        item2 = purchasableItems.purchasableItems[PlayerPrefs.GetInt("itemEquipped2")] as EquippableItem;
+        Debug.Log("equipped items: " + item1.itemName + ", " + item2.itemName);
         scoreText.text = "000";
         multiplierText.text = "1x";
         comboText.text = "Combo: 0";
@@ -198,8 +204,8 @@ public class GameManager : MonoBehaviour
     public void DisplayReward()
     {
         reward.SetActive(true);
-        int coin = (int) Mathf.Floor(currentScore * 0.1f);
-        int exp = currentScore;
+        int coin = (int) Mathf.Floor(currentScore * 0.1f * item1.extraCoins * item2.extraCoins);
+        int exp = (int)(currentScore * item1.extraExp * item2.extraExp);
         coinAmt.text = "" + coin;
         expPointAmt.text = "" + exp;
         PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins")+coin);
