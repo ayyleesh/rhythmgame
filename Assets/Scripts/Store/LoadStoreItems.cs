@@ -30,6 +30,7 @@ public class LoadStoreItems : MonoBehaviour
         instance = this;
         currentCoins = PlayerPrefs.GetInt("coins");
         currentCoinsText.text = "" + currentCoins;
+        items = FindObjectOfType<PurchasableItems>().purchasableItems;
         
         instItems = new GameObject[items.Length];
         button = new GameObject[items.Length];

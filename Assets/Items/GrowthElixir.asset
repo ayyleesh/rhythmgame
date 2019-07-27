@@ -9,12 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97eefce8a564b854abcdfe7f286e5d78, type: 3}
-  m_Name: Character4
+  m_Script: {fileID: 11500000, guid: c28d4667c65ca764c8bc730cfa7eb0db, type: 3}
+  m_Name: GrowthElixir
   m_EditorClassIdentifier: 
   itemID: 2
-  itemType: character
-  itemImage: {fileID: 21300000, guid: f5abae5ca37fc482a95e88c363a930a9, type: 3}
-  itemName: Even More Coins
-  itemDesc: Eveb more Coins
+  itemType: powerUp
+  itemImage: {fileID: 21300000, guid: 245484d8313fe4bac9ab235fc6afe7b6, type: 3}
+  itemName: Growth Elixir
+  itemDesc: Increase Exp. by 15%
   itemPrice: 500
+  extraExp: 1.15
+  extraCoins: 1

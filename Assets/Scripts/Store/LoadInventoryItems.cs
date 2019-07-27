@@ -12,10 +12,15 @@ public class LoadInventoryItems : MonoBehaviour
     public StoreItem[] purchasableItems;
     List<int> boughtItems = new List<int> { 1, 0 };
 
+    [Header("Sprite for filter buttons")]
+    public SpriteState state = new SpriteState();
+
     GameObject[] instInventoryItems;
     // Start is called before the first frame update
     void Start()
     {
+        purchasableItems = FindObjectOfType<PurchasableItems>().purchasableItems;
+        GameObject.Find("Filter/All").GetComponent<Image>().sprite = state.pressedSprite;
         int listLength = boughtItems.Count;
         instInventoryItems = new GameObject[listLength];
         for (int i = 0; i < listLength; i++)
@@ -34,6 +39,9 @@ public class LoadInventoryItems : MonoBehaviour
 
     public void FilterCharacters()
     {
+        GameObject.Find("Filter/Character").GetComponent<Image>().sprite = state.disabledSprite;
+        GameObject.Find("Filter/All").GetComponent<Image>().sprite = state.disabledSprite;
+        GameObject.Find("Filter/PowerUp").GetComponent<Image>().sprite = state.pressedSprite;
         for (int i = 0; i < instInventoryItems.Length; i++)
         {
             if (purchasableItems[i].itemType != "character")
@@ -49,6 +57,9 @@ public class LoadInventoryItems : MonoBehaviour
 
     public void FilterPowerUps()
     {
+        GameObject.Find("Filter/Character").GetComponent<Image>().sprite = state.pressedSprite;
+        GameObject.Find("Filter/All").GetComponent<Image>().sprite = state.disabledSprite;
+        GameObject.Find("Filter/PowerUp").GetComponent<Image>().sprite = state.disabledSprite;
         for (int i = 0; i < instInventoryItems.Length; i++)
         {
             if (purchasableItems[i].itemType != "powerUp")
@@ -64,6 +75,9 @@ public class LoadInventoryItems : MonoBehaviour
 
     public void ShowAll()
     {
+        GameObject.Find("Filter/Character").GetComponent<Image>().sprite = state.disabledSprite;
+        GameObject.Find("Filter/All").GetComponent<Image>().sprite = state.pressedSprite;
+        GameObject.Find("Filter/PowerUp").GetComponent<Image>().sprite = state.disabledSprite;
         for (int i = 0; i < instInventoryItems.Length; i++)
         {
             if (!instInventoryItems[i].activeInHierarchy)
