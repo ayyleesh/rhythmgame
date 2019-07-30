@@ -8,6 +8,7 @@ public class LevelLoader : MonoBehaviour
 {
     public GameObject levelContainer;
     public GameObject levelButton;
+    public LevelMenuObject[] levelGroups;
 
     public GameObject[] instContainer;
     public GameObject[] instButton;
@@ -40,11 +41,13 @@ public class LevelLoader : MonoBehaviour
         {
             instContainer[k] = Instantiate(levelContainer, transform, false);
             instContainer[k].SetActive(false);
-            for (int i = 0; i < levelNumbers[k]; i++)
+            for (int i = 0; i < levelGroups[k].levelNames.Length; i++)
             {
                 instButton[i] = Instantiate(levelButton, instContainer[k].transform, false);
                 int counter = i;
                 instButton[i].GetComponent<ButtonCount>().buttonCount = counter;
+                instButton[i].transform.GetChild(1).GetComponent<Text>().text = levelGroups[k].levelNames[i];
+                instButton[i].transform.GetChild(0).GetComponent<Text>().text = levelGroups[k].romajiNames[i];
                 instButton[counter].GetComponent<Button>().onClick.AddListener(() => LoadLevel("scene" + snapScroll.selectedPanelID + counter));
             }
         }

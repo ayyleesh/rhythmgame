@@ -20,14 +20,23 @@ public class PauseButtonsScript : MonoBehaviour
     public void Start()
     {
         gameMusic = GameObject.Find("GameMusic").GetComponent<AudioSource>();
-        gameSFX = GameObject.Find("TapFX").GetComponent<AudioSource>();
+        if (gameSFX != null)
+        {
+            gameSFX = GameObject.Find("TapFX").GetComponent<AudioSource>();
+        }
     }
 
     public void Update()
     {
         AdjustVolume(musicAdjustSlider, gameMusic);
-        AdjustVolume(sfxAdjustSlider, gameSFX);
-        AdjustSpeed(dialogueSpeedSlider);
+        if (gameSFX != null)
+        {
+            AdjustVolume(sfxAdjustSlider, gameSFX);
+        }
+        if (dialogueSpeedSlider != null)
+        {
+            AdjustSpeed(dialogueSpeedSlider);
+        }
     }
 
     public void IncreaseVolume()
@@ -67,15 +76,28 @@ public class PauseButtonsScript : MonoBehaviour
 
     public void AdjustSpeed(Slider slider)
     {
+        Transform nodesContainer = slider.transform.Find("Nodes");
         if (slider.value == 0)
         {
             DialogManager.instance.delay = 0.05f;
+        }
+        else if (slider.value == 1)
+        {
+            DialogManager.instance.delay = 0.03f;
         }
         else if (slider.value == 2)
         {
             DialogManager.instance.delay = 0.01f;
         }
-        
+        for (int i = 1; i <= slider.value; i++)
+        {
+            nodesContainer.transform.GetChild(i).GetComponent<Image>().color = new Color32(36, 214, 255, 255);
+        }
+        for (int k = (int)slider.value + 1; k < slider.maxValue + 1; k++)
+        {
+            nodesContainer.transform.GetChild(k).GetComponent<Image>().color = new Color32(0, 0, 0, 130);
+        }
+
     }
 
     public void PauseGame()
@@ -135,6 +157,7 @@ public class PauseButtonsScript : MonoBehaviour
 
     public void ConfirmReplay()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -151,11 +174,13 @@ public class PauseButtonsScript : MonoBehaviour
 
     public void ConfirmExit()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Song Selector");
     }
 
     public void ExitLesson()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("LevelSelector");
     }
 

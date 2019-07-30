@@ -19,7 +19,7 @@ public class SnapScroll : MonoBehaviour
     public float scaleSpeed;
     [Header("Other Objects")]
     public GameObject panel;
-    public string[] songTitle;
+    public MenuObject[] menu;
 
     private GameObject[] instPanel;
     private Vector2[] panelPosition;
@@ -34,6 +34,7 @@ public class SnapScroll : MonoBehaviour
     void Start()
     {
         contentRect = GetComponent<RectTransform>();
+        panelCounter = menu.Length;
         instPanel = new GameObject[panelCounter];
         panelPosition = new Vector2[panelCounter];
         panelScale = new Vector2[panelCounter];
@@ -41,7 +42,9 @@ public class SnapScroll : MonoBehaviour
         for (int i = 0; i < panelCounter; i++)
         {
             instPanel[i] = Instantiate(panel, transform, false);
-            instPanel[i].GetComponentInChildren<Text>().text = songTitle[i];
+            instPanel[i].transform.GetChild(0).GetComponent<Image>().sprite = menu[i].itemThumbnail;
+            instPanel[i].transform.GetChild(1).GetComponent<Text>().text = menu[i].itemName;
+            instPanel[i].transform.GetChild(2).GetComponentInChildren<Text>().text = "Lv." + menu[i].level;
             if (i == 0) continue;
             instPanel[i].transform.localPosition = new Vector2(instPanel[i].transform.localPosition.x, instPanel[i-1].transform.localPosition.y - panel.GetComponent<RectTransform>().sizeDelta.y - panelOffset);
             panelPosition[i] = -instPanel[i].transform.localPosition;

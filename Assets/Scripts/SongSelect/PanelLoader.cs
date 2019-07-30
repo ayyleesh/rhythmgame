@@ -8,22 +8,32 @@ public class PanelLoader : MonoBehaviour
 {
     public Image albumThumbnail;
     public Text songTitle;
+    public Text bpmIndicator;
+    public Text levelIndicator;
     public Button normalButton;
 
-    public Sprite[] thumbnails;
-
+    public SongMenuObject[] songMenus;
     SnapScroll snapScroll;
+    MenuObject[] menu;
     
     void Start()
     {
         GameObject content = GameObject.Find("Content");
         snapScroll = content.GetComponent<SnapScroll>();
+        menu = snapScroll.menu;
+        songMenus = new SongMenuObject[menu.Length];
+        for (int i = 0; i < menu.Length; i++)
+        {
+            songMenus[i] = menu[i] as SongMenuObject;
+        }
     }
     
     void Update()
     {
-        songTitle.text = snapScroll.songTitle[snapScroll.selectedPanelID];
-        albumThumbnail.sprite = thumbnails[snapScroll.selectedPanelID];
+        songTitle.text = songMenus[snapScroll.selectedPanelID].itemName;
+        levelIndicator.text = "Level: " + songMenus[snapScroll.selectedPanelID].level;
+        bpmIndicator.text = "BPM: " + songMenus[snapScroll.selectedPanelID].bpm;
+        albumThumbnail.sprite = songMenus[snapScroll.selectedPanelID].itemThumbnail;
 
         int songIndex = snapScroll.selectedPanelID + 1;
         normalButton.GetComponent<Button>().onClick.AddListener(() => LoadLevel("scene"+songIndex));
