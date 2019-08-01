@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class ItemSlot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public EquippableItem item;
+
+    public void OnClick()
     {
-        
+        if (item != null)
+        {
+            bool isEquipped = Equipment.instance.Add(item);
+            if (isEquipped)
+            {
+                Debug.Log("equipped " + item.itemName);
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

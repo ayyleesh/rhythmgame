@@ -58,6 +58,7 @@ public class LoadInventoryItems : MonoBehaviour
             Image image = itemSlots[i].transform.GetChild(0).GetComponent<Image>();
             image.enabled = true;
             image.sprite = equippableItems[i].itemImage;
+            itemSlots[i].item = equippableItems[i];
         }
     }
 
