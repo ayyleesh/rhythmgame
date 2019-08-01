@@ -5,16 +5,26 @@ using UnityEngine.UI;
 
 public class LoadInventoryItems : MonoBehaviour
 {
-    List<int> boughtItems = new List<int>() { 0, 1, 2, 3 };
+    public GameObject itemsWindow;
+    public GameObject charactersWindow;
+    public Button itemsFilter, charactersFilter;
+
+    List<int> boughtItems = new List<int>() { 1, 2, 3 };
     public PurchasableItems purchasableItems;
     public Transform itemSlotParent;
     public Transform characterSlotParent;
 
     CharacterSlot[] characterSlots;
     ItemSlot[] itemSlots;
-    public StoreItem[] items;
-    public List<EquippableItem> equippableItems = new List<EquippableItem>();
-    public List<CharacterItem> characters = new List<CharacterItem>();
+    StoreItem[] items;
+    List<EquippableItem> equippableItems = new List<EquippableItem>();
+    List<CharacterItem> characters = new List<CharacterItem>();
+
+    [Header("filter buttons sprite state")]
+    public SpriteState filterButtonsStates = new SpriteState();
+
+    [Header("character buttons sprite state")]
+    public SpriteState characterButtonsStates = new SpriteState();
 
     private void Start()
     {
@@ -23,7 +33,7 @@ public class LoadInventoryItems : MonoBehaviour
         items = purchasableItems.items;
         FilterItems();
         LoadItems();
-        LoadCharacters();
+        EnableCharacters();
     }
 
     void FilterItems()
@@ -51,80 +61,30 @@ public class LoadInventoryItems : MonoBehaviour
         }
     }
 
-    void LoadCharacters()
+    void EnableCharacters()
     {
         for (int i = 0; i < characters.Count; i++)
         {
-            Image image = characterSlots[i].transform.GetChild(0).GetComponent<Image>();
-            image.enabled = true;
-            image.sprite = characters[i].characterSprite;
+            GameObject characterButtons = GameObject.Find(characters[i].itemName);
+            characterButtons.GetComponent<Button>().enabled = true;
+            characterButtons.transform.GetChild(1).gameObject.SetActive(false);
         }
     }
 
-    //public GameObject inventoryPrefab;
-    //public GameObject container;
+    public void ViewItems()
+    {
+        itemsWindow.SetActive(true);
+        itemsFilter.GetComponent<Image>().sprite = filterButtonsStates.highlightedSprite;
+        charactersWindow.SetActive(false);
+        charactersFilter.GetComponent<Image>().sprite = filterButtonsStates.disabledSprite;
+    }
 
-    //public StoreItem[] purchasableItems;
-    //List<int> boughtItems = new List<int> { 1, 0 };
-
-    //GameObject[] instInventoryItems;
-    //// Start is called before the first frame update
-    //void Start()
-    //{
-    //    int listLength = boughtItems.Count;
-    //    instInventoryItems = new GameObject[listLength];
-    //    for (int i = 0; i < listLength; i++)
-    //    {
-    //        instInventoryItems[i] = Instantiate(inventoryPrefab, container.transform, false);
-    //        instInventoryItems[i].transform.GetChild(0).GetComponent<Image>().sprite = purchasableItems[boughtItems[i]].itemImage;
-    //        instInventoryItems[i].transform.GetChild(1).GetComponent<Text>().text = purchasableItems[boughtItems[i]].itemName;
-    //    }
-    //}
-
-    //// Update is called once per frame
-    //void Update()
-    //{
-
-    //}
-
-    //public void FilterCharacters()
-    //{
-    //    for (int i = 0; i < instInventoryItems.Length; i++)
-    //    {
-    //        if (purchasableItems[i].itemType != "character")
-    //        {
-    //            instInventoryItems[i].SetActive(false);
-    //        }
-    //        if (purchasableItems[i].itemType == "character" && !instInventoryItems[i].activeInHierarchy)
-    //        {
-    //            instInventoryItems[i].SetActive(true);
-    //        }
-    //    }
-    //}
-
-    //public void FilterPowerUps()
-    //{
-    //    for (int i = 0; i < instInventoryItems.Length; i++)
-    //    {
-    //        if (purchasableItems[i].itemType != "powerUp")
-    //        {
-    //            instInventoryItems[i].SetActive(false);
-    //        }
-    //        if (purchasableItems[i].itemType == "powerUp" && !instInventoryItems[i].activeInHierarchy)
-    //        {
-    //            instInventoryItems[i].SetActive(true);
-    //        }
-    //    }
-    //}
-
-    //public void ShowAll()
-    //{
-    //    for (int i = 0; i < instInventoryItems.Length; i++)
-    //    {
-    //        if (!instInventoryItems[i].activeInHierarchy)
-    //        {
-    //            instInventoryItems[i].SetActive(true);
-    //        }
-    //    }
-    //}
+    public void ViewCharacters()
+    {
+        itemsWindow.SetActive(false);
+        itemsFilter.GetComponent<Image>().sprite = filterButtonsStates.disabledSprite;
+        charactersWindow.SetActive(true);
+        charactersFilter.GetComponent<Image>().sprite = filterButtonsStates.highlightedSprite;
+    }
+    
 }
