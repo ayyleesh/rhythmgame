@@ -8,13 +8,13 @@ public class LevelLoader : MonoBehaviour
 {
     public GameObject levelContainer;
     public GameObject levelButton;
+
+    MenuObject[] menu;
     public LevelMenuObject[] levelGroups;
 
     public GameObject[] instContainer;
     public GameObject[] instButton;
-
-    public int[] levelNumbers;
-
+    
     public int levelTotal;
     public int containerCount;
     public int buttonCount;
@@ -24,8 +24,17 @@ public class LevelLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        levelCount = levelNumbers.Length;
-        StartCoroutine(LateStart(0.01f));
+        levelCount = levelGroups.Length;
+        StartCoroutine(LateStart(0.1f));
+
+        GameObject content = GameObject.Find("Content");
+        snapScroll = content.GetComponent<SnapScroll>();
+        menu = snapScroll.menu;
+        levelGroups = new LevelMenuObject[menu.Length];
+        for (int i = 0; i < menu.Length; i++)
+        {
+            levelGroups[i] = menu[i] as LevelMenuObject;
+        }
     }
 
     IEnumerator LateStart(float delay)
@@ -51,7 +60,6 @@ public class LevelLoader : MonoBehaviour
                 instButton[counter].GetComponent<Button>().onClick.AddListener(() => LoadLevel("scene" + snapScroll.selectedPanelID + counter));
             }
         }
-
     }
 
     // Update is called once per frame

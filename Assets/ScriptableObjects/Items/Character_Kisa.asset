@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97eefce8a564b854abcdfe7f286e5d78, type: 3}
-  m_Name: Character2
+  m_Name: Character_Kisa
   m_EditorClassIdentifier: 
   itemID: 0
   itemType: character
   itemImage: {fileID: 21300000, guid: cf3761f5220da01418387bd3fef11ae9, type: 3}
-  itemName: 2nd Character
+  itemName: Kisa
   itemDesc: His name is Kisa
   itemPrice: 100
