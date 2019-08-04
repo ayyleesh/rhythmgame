@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class EquipmentSlot : MonoBehaviour
 {
-    EquippableItem item;
+    public EquippableItem item;
 
     public Image icon;
     public Button removeButton;
