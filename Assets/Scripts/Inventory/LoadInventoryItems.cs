@@ -9,7 +9,7 @@ public class LoadInventoryItems : MonoBehaviour
     public GameObject charactersWindow;
     public Button itemsFilter, charactersFilter;
 
-    List<int> boughtItems = new List<int>() { 1, 2, 3 };
+    List<int> boughtItems = new List<int>() { 0, 1, 2, 3 };
     public PurchasableItems purchasableItems;
     public Transform itemSlotParent;
     public Transform characterSlotParent;
