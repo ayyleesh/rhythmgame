@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EquipUI : MonoBehaviour
 {
     Equipment equipment;
     PurchasableItems purchasableItems;
-
     EquipmentSlot[] slots;
-    int eq1, eq2;
+    public Text warningMessage;
 
     public Transform itemsParent;
+    public GameObject warningPopUp;
     public int[] saveEquipped;
 
     // Start is called before the first frame update
@@ -19,7 +20,7 @@ public class EquipUI : MonoBehaviour
         equipment = Equipment.instance;
         purchasableItems = PurchasableItems.instance;
         equipment.onItemChangedCallBack += UpdateUI;
-
+        warningMessage = warningPopUp.transform.GetComponentInChildren<Text>();
         slots = itemsParent.GetComponentsInChildren<EquipmentSlot>();
 
         saveEquipped = new int[equipment.equipLimit];
@@ -55,6 +56,17 @@ public class EquipUI : MonoBehaviour
         }
     }
 
+    public void DisplayWarning(string warning)
+    {
+        warningPopUp.SetActive(true);
+        warningMessage.text = warning;
+    }
+
+    public void CloseWarning()
+    {
+        warningPopUp.SetActive(false);
+    }
+
     public void SaveEquippedItem()
     {
         for (int i = 0; i < equipment.equipLimit; i++)
@@ -71,5 +83,6 @@ public class EquipUI : MonoBehaviour
 
         PlayerPrefs.SetInt("itemEquipped1", saveEquipped[0]);
         PlayerPrefs.SetInt("itemEquipped2", saveEquipped[1]);
+        DisplayWarning("Saved!");
     }
 }

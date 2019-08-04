@@ -10,6 +10,12 @@ public class ItemSlot : MonoBehaviour
     {
         if (item != null)
         {
+
+            if (Equipment.instance.equipped.Count != 0 && item == Equipment.instance.equipped[0])
+            {
+                FindObjectOfType<EquipUI>().DisplayWarning("Item is already equipped!");
+                return;
+            }
             bool isEquipped = Equipment.instance.Add(item);
             if (isEquipped)
             {

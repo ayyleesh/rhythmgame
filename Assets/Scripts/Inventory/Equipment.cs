@@ -25,7 +25,7 @@ public class Equipment : MonoBehaviour
     {
         if (equipped.Count >= equipLimit)
         {
-            Debug.Log("not enough room");
+            FindObjectOfType<EquipUI>().DisplayWarning("Not enough rooms!");
             return false;
         }
         equipped.Add(item);
