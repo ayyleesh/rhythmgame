@@ -34,6 +34,10 @@ public class LoadInventoryItems : MonoBehaviour
         FilterItems();
         LoadItems();
         EnableCharacters();
+        if (PlayerPrefs.GetString("previousScene") == "LevelSelector")
+        {
+            ViewCharacters();
+        }
     }
 
     void FilterItems()

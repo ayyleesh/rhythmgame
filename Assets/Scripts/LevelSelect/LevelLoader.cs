@@ -21,11 +21,11 @@ public class LevelLoader : MonoBehaviour
     int levelCount;
 
     SnapScroll snapScroll;
+    ButtonsScript buttonsScript;
     // Start is called before the first frame update
     void Start()
     {
         levelCount = levelGroups.Length;
-        StartCoroutine(LateStart(0.1f));
 
         GameObject content = GameObject.Find("Content");
         snapScroll = content.GetComponent<SnapScroll>();
@@ -35,6 +35,8 @@ public class LevelLoader : MonoBehaviour
         {
             levelGroups[i] = menu[i] as LevelMenuObject;
         }
+
+        StartCoroutine(LateStart(0.01f));
     }
 
     IEnumerator LateStart(float delay)
@@ -42,6 +44,7 @@ public class LevelLoader : MonoBehaviour
         yield return new WaitForSeconds(delay);
         GameObject content = GameObject.Find("Content");
         snapScroll = content.GetComponent<SnapScroll>();
+        buttonsScript = FindObjectOfType<ButtonsScript>();
         containerCount = snapScroll.panelCounter;
         instContainer = new GameObject[containerCount];
         instButton = new GameObject[levelTotal];
@@ -57,7 +60,7 @@ public class LevelLoader : MonoBehaviour
                 instButton[i].GetComponent<ButtonCount>().buttonCount = counter;
                 instButton[i].transform.GetChild(1).GetComponent<Text>().text = levelGroups[k].levelNames[i];
                 instButton[i].transform.GetChild(0).GetComponent<Text>().text = levelGroups[k].romajiNames[i];
-                instButton[counter].GetComponent<Button>().onClick.AddListener(() => LoadLevel("scene" + snapScroll.selectedPanelID + counter));
+                instButton[counter].GetComponent<Button>().onClick.AddListener(() => buttonsScript.LoadPopUpInfo(snapScroll.selectedPanelID, counter));
             }
         }
     }
@@ -68,7 +71,7 @@ public class LevelLoader : MonoBehaviour
         
         instContainer[snapScroll.selectedPanelID].SetActive(true);
 
-        for (int i = 0; i < levelCount; i++)
+        for (int i = 0; i < levelGroups.Length; i++)
         {
             if (i != snapScroll.selectedPanelID)
             {

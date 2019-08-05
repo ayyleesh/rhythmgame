@@ -9,6 +9,7 @@ public class EquipUI : MonoBehaviour
     PurchasableItems purchasableItems;
     EquipmentSlot[] slots;
     public Text warningMessage;
+    public Button dismissWarningButton;
 
     public Transform itemsParent;
     public GameObject warningPopUp;
@@ -84,5 +85,9 @@ public class EquipUI : MonoBehaviour
         PlayerPrefs.SetInt("itemEquipped1", saveEquipped[0]);
         PlayerPrefs.SetInt("itemEquipped2", saveEquipped[1]);
         DisplayWarning("Saved!");
+        if (PlayerPrefs.GetString("previousScene") == "LevelSelector" || PlayerPrefs.GetString("previousScene") == "Song Selector")
+        {
+            dismissWarningButton.onClick.AddListener(() => FindObjectOfType<NavButtonScript>().ToPreviousScene());
+        }
     }
 }

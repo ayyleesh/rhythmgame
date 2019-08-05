@@ -40,20 +40,31 @@ public class GameManager : MonoBehaviour
     public int totalCoins, totalExpPoints;
     float percentHit;
 
+    public float coinMultiplier = 1;
+    public float expMultiplier = 1;
+    PurchasableItems purchasableItems;
+    public EquippableItem[] equippedItems;
+
     void Start()
     {
         instance = this;
         totalNotes = FindObjectsOfType<NoteObject>().Length;
+        purchasableItems = FindObjectOfType<PurchasableItems>();
+
+        equippedItems = new EquippableItem[2];
+        AddEquippedItems();
 
         scoreText.text = "000";
         multiplierText.text = "1x";
         comboText.text = "Combo: 0";
+        totalCoins = PlayerPrefs.GetInt("coins");
+        totalExpPoints = PlayerPrefs.GetInt("expPoints");
+
+        
     }
     
     void Update()
     {
-        totalCoins = PlayerPrefs.GetInt("coins");
-        totalExpPoints = PlayerPrefs.GetInt("expPoints");
         if (!startPlaying)
         {
             if (Input.anyKeyDown)
@@ -61,6 +72,28 @@ public class GameManager : MonoBehaviour
                 startPlaying = true;
                 noteScroller.hasStarted = true;
                 gameMusic.Play();
+            }
+        }
+    }
+
+    void AddEquippedItems()
+    {
+        if (PlayerPrefs.GetInt("itemEquipped1") != 0)
+        {
+            equippedItems[0] = purchasableItems.items[PlayerPrefs.GetInt("itemEquipped1")] as EquippableItem;
+        }
+
+        if (PlayerPrefs.GetInt("itemEquipped2") != 0)
+        {
+            equippedItems[1] = purchasableItems.items[PlayerPrefs.GetInt("itemEquipped2")] as EquippableItem;
+        }
+
+        for (int i = 0; i < equippedItems.Length; i++)
+        {
+            if (equippedItems[i] != null)
+            {
+                coinMultiplier = coinMultiplier * equippedItems[i].coinMultiplier;
+                expMultiplier = expMultiplier * equippedItems[i].expMultiplier;
             }
         }
     }
@@ -198,8 +231,8 @@ public class GameManager : MonoBehaviour
     public void DisplayReward()
     {
         reward.SetActive(true);
-        int coin = (int) Mathf.Floor(currentScore * 0.1f);
-        int exp = currentScore;
+        int coin = (int)Mathf.Floor(currentScore * 0.1f * coinMultiplier);
+        int exp = (int)(currentScore * expMultiplier);
         coinAmt.text = "" + coin;
         expPointAmt.text = "" + exp;
         PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins")+coin);

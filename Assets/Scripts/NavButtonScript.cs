@@ -47,6 +47,7 @@ public class NavButtonScript : MonoBehaviour
 
     public void ToInventory()
     {
+        SavePreviousScene();
         SceneManager.LoadScene("Inventory");
     }
 
