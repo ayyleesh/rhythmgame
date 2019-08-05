@@ -10,11 +10,18 @@ public class DialogBase : ScriptableObject
     [System.Serializable]
     public class Info
     {
-        public string characterName;
-        public Sprite avatar;
+        public CharacterItem character;
+        public Expressions characterExpression;
+        //public string characterName;
+        //public Sprite avatar;
         [TextArea(4, 8)]
         public string lines;
         public UnityEvent dialogEvent;
+
+        public void ChangeExpression()
+        {
+            character.Expression = characterExpression;
+        }
 
     }
     [Header("Insert New Dialog Below")]

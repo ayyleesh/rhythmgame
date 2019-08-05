@@ -101,9 +101,10 @@ public class DialogManager : MonoBehaviour
         info.dialogEvent.Invoke();
         completeText = info.lines;
 
-        dialogueName.text = info.characterName;
+        dialogueName.text = info.character.itemName;
         dialogueText.text = info.lines;
-        dialogueAvatar.sprite = info.avatar;
+        info.ChangeExpression();
+        dialogueAvatar.sprite = info.character.CharacterSprite;
 
         dialogueText.text = "";
         StartCoroutine(TypeDialogue(info));

@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Level1_A C1
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
     lines: Not bad.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
     lines: Let's try the second time
     dialogEvent:
       m_PersistentCalls:

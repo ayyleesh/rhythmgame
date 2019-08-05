@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Level1_A
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
     lines: Welcome to the first Hiragana lesson.
     dialogEvent:
       m_PersistentCalls:
@@ -32,16 +32,16 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
     lines: This time, we'll learn about the letter A.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
     lines: The letter A looks like this.
     dialogEvent:
       m_PersistentCalls:
@@ -59,24 +59,24 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 0}
+    characterExpression: 0
     lines: As every hiragana characters, the letter has a specific writing order.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 0}
+    characterExpression: 0
     lines: Pay attention to the order.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 0}
+    characterExpression: 0
     lines: First, draw a horizontal line.
     dialogEvent:
       m_PersistentCalls:
@@ -94,8 +94,8 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 0}
+    characterExpression: 0
     lines: Then, draw the vertical line. Make sure it curves a bit.
     dialogEvent:
       m_PersistentCalls:
@@ -113,8 +113,8 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 0}
+    characterExpression: 0
     lines: Finally, draw a spiral.
     dialogEvent:
       m_PersistentCalls:
@@ -132,24 +132,24 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 0}
+    characterExpression: 0
     lines: Start from below the horizontal line, about three-quarter of the length,
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 0}
+    characterExpression: 0
     lines: The beginning of the spiral should portrude a bit, like shown.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+  - character: {fileID: 0}
+    characterExpression: 0
     lines: Now, why don't you try yourself?
     dialogEvent:
       m_PersistentCalls:
