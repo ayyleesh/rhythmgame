@@ -10,25 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee50d3b6adc64a24ba4541c50eebd5c1, type: 3}
-  m_Name: Level1_A C1
+  m_Name: Level1_A_finish 1
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
-    lines: Not bad.
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: I think you did well.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
-    lines: Let's try the second time
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 3
+    lines: Nice one.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: 
     dialogEvent:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
-          m_MethodName: NextLetter
+          m_MethodName: GiveReward
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

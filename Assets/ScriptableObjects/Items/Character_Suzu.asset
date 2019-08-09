@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f16b40dc0b4f2374bbea6032f5caecce, type: 3}
-  m_Name: Character_Ritsu
+  m_Name: Character_Suzu
   m_EditorClassIdentifier: 
   itemID: 1
   itemType: character
-  itemImage: {fileID: 21300010, guid: 82fcef4110e198841a58354fa294b89a, type: 3}
-  itemName: Ritsu
+  itemImage: {fileID: 21300000, guid: 211eda4c57cfcf040aa59d0326091323, type: 3}
+  itemName: Suzu
   itemDesc: 
   itemPrice: 0
   expressionSprite:
     normal: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
-    smile: {fileID: 21300000, guid: 82fcef4110e198841a58354fa294b89a, type: 3}
-    frown: {fileID: 21300000, guid: 7b957fbd45bce2d47ae75a2e18fe3db7, type: 3}
-    laugh: {fileID: 21300006, guid: 7b957fbd45bce2d47ae75a2e18fe3db7, type: 3}
+    smile: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
+    frown: {fileID: 21300000, guid: 687cd6203142792438da67576eec5ee4, type: 3}
+    laugh: {fileID: 21300000, guid: afbe726d2c9a469488651c11f113b70c, type: 3}

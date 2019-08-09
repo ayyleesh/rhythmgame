@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee50d3b6adc64a24ba4541c50eebd5c1, type: 3}
-  m_Name: Level1_I
+  m_Name: Level1_A
   m_EditorClassIdentifier: 
   dialogueInfo:
   - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
     characterExpression: 0
-    lines: As english alphabet, Japanese also has A-I-U-E-O vowels.
+    lines: Welcome to the first Hiragana lesson.
     dialogEvent:
       m_PersistentCalls:
         m_Calls:
@@ -34,7 +34,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
     characterExpression: 0
-    lines: This time, we're talking about the letter I.
+    lines: This time, we'll learn about the letter A.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -42,7 +42,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
     characterExpression: 0
-    lines: The letter I looks like this.
+    lines: The letter A looks like this.
     dialogEvent:
       m_PersistentCalls:
         m_Calls:
@@ -61,7 +61,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
     characterExpression: 0
-    lines: It's very easy to write, don't you think?.
+    lines: As every hiragana characters, the letter has a specific writing order.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -69,7 +69,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
     characterExpression: 0
-    lines: It only has two strokes.
+    lines: Pay attention to the order.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -77,7 +77,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
     characterExpression: 0
-    lines: First, draw an inverted J but with smaller 'hook', like this.
+    lines: First, draw a horizontal line.
     dialogEvent:
       m_PersistentCalls:
         m_Calls:
@@ -96,7 +96,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
     characterExpression: 0
-    lines: Then, create a slightly curving horizontal line.
+    lines: Then, draw the vertical line. Make sure it curves a bit.
     dialogEvent:
       m_PersistentCalls:
         m_Calls:
@@ -115,7 +115,26 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
     characterExpression: 0
-    lines: Make sure that the second line is shorter than the first.
+    lines: Finally, draw a spiral.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: PlayAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
+    lines: Start from below the horizontal line, about three-quarter of the length,
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -123,10 +142,29 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
     characterExpression: 0
-    lines: Let's try.
+    lines: The beginning of the spiral should portrude a bit, like shown.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
+    lines: Now, why don't you try yourself?
     dialogEvent:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: ShowBoard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
           m_MethodName: ClearAnimation
           m_Mode: 1
@@ -140,17 +178,6 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
           m_MethodName: StartWriting
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
-          m_MethodName: ShowBoard
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

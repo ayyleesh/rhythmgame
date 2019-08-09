@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 7b957fbd45bce2d47ae75a2e18fe3db7
+guid: 9031d85a509d3c54989a306a8f7d280f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: 00_hiraganaTrace_a
-    21300002: 00_hiraganaTrace_i
-    21300004: 00_hiraganaTrace_u
-    21300006: 00_hiraganaTrace_e
-    21300008: 00_hiraganaTrace_o
-    21300010: 00_hiraganaTrace_ka
-    21300012: 00_hiraganaTrace_ki
-    21300014: 00_hiraganaTrace_ku
-    21300016: 00_hiraganaTrace_ke
-    21300018: 00_hiraganaTrace_ko
-    21300020: 00_hiraganaTrace_sa
-    21300022: 00_hiraganaTrace_shi
-    21300024: 00_hiraganaTrace_su
-    21300026: 00_hiraganaTrace_se
-    21300028: 00_hiraganaTrace_so
+    21300000: 00_hiraganaTrace2_a
+    21300002: 00_hiraganaTrace2_I
+    21300004: 00_hiraganaTrace2_u
+    21300006: 00_hiraganaTrace2_e
+    21300008: 00_hiraganaTrace2_o
+    21300010: 00_hiraganaTrace2_ka
+    21300012: 00_hiraganaTrace2_ki
+    21300014: 00_hiraganaTrace2_ku
+    21300016: 00_hiraganaTrace2_ke
+    21300018: 00_hiraganaTrace2_ko
+    21300020: 00_hiraganaTrace2_sa
+    21300022: 00_hiraganaTrace2_shi
+    21300024: 00_hiraganaTrace2_su
+    21300026: 00_hiraganaTrace2_se
+    21300028: 00_hiraganaTrace2_so
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -132,7 +132,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 00_hiraganaTrace_a
+      name: 00_hiraganaTrace2_a
       rect:
         serializedVersion: 2
         x: 0
@@ -140,19 +140,19 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28486a79c35d5264eb91f0a374eb41c4
+      spriteID: 415c1ce612688aa4a89210650c4e91fb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_i
+      name: 00_hiraganaTrace2_I
       rect:
         serializedVersion: 2
         x: 600
@@ -160,19 +160,19 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bddc35060bf96b408f4704cea3272b3
+      spriteID: 3ffec9b89179d1e4aac0b5de2100fda9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_u
+      name: 00_hiraganaTrace2_u
       rect:
         serializedVersion: 2
         x: 1200
@@ -180,19 +180,19 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ef163dc318687548990526aebf24791
+      spriteID: 037aebeb8edf75c44a9656088e8a6552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_e
+      name: 00_hiraganaTrace2_e
       rect:
         serializedVersion: 2
         x: 1800
@@ -200,19 +200,19 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd1346bf6fa15b243a462ec62a070444
+      spriteID: 7a77e9b683a381346a2b15b0c76e8630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_o
+      name: 00_hiraganaTrace2_o
       rect:
         serializedVersion: 2
         x: 2400
@@ -220,19 +220,19 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f02c16b25cd4ca748ba4e3f8fd28850f
+      spriteID: 0aeb98207be7c1645afa6cd071de593e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_ka
+      name: 00_hiraganaTrace2_ka
       rect:
         serializedVersion: 2
         x: 0
@@ -240,19 +240,19 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3f102e921c0d61459e545927c96f2cf
+      spriteID: 4b7f42b217cfd1b44b58fcfbfabc1a62
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_ki
+      name: 00_hiraganaTrace2_ki
       rect:
         serializedVersion: 2
         x: 600
@@ -260,19 +260,19 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2be2a3017ffd8194c93a6386bbc8182a
+      spriteID: 489e2e421b60abe428667ae9ee46e2f8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_ku
+      name: 00_hiraganaTrace2_ku
       rect:
         serializedVersion: 2
         x: 1200
@@ -280,19 +280,19 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54381bf05c0ed774db978ac518e77b15
+      spriteID: a8fb9302e15ccb74ea8c4f9de2b41022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_ke
+      name: 00_hiraganaTrace2_ke
       rect:
         serializedVersion: 2
         x: 1800
@@ -300,19 +300,19 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c4410df0eb66c94f9046ca73b6d3bce
+      spriteID: 771b6f98b93fb9641ac97bec9168a7d5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_ko
+      name: 00_hiraganaTrace2_ko
       rect:
         serializedVersion: 2
         x: 2400
@@ -320,19 +320,19 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7283d15fd73443f45833544e6e3ea0ec
+      spriteID: 27de4388174a0a54eaceb60af3e52f95
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_sa
+      name: 00_hiraganaTrace2_sa
       rect:
         serializedVersion: 2
         x: 0
@@ -340,39 +340,39 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1797d068197b7f4d89e0c599bb85248
+      spriteID: afe325fc41c3fc242908d5a96077484e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_shi
+      name: 00_hiraganaTrace2_shi
       rect:
         serializedVersion: 2
-        x: 593
+        x: 600
         y: 0
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0f8cb10c33aae04d9bd59d86a21260c
+      spriteID: 403bbb707f8408247a51f4027802eee9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_su
+      name: 00_hiraganaTrace2_su
       rect:
         serializedVersion: 2
         x: 1200
@@ -380,19 +380,19 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cb07041e40049b449ca66dd6d3ede45
+      spriteID: 93abde167189e0b469f35ac71ac30d09
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_se
+      name: 00_hiraganaTrace2_se
       rect:
         serializedVersion: 2
         x: 1800
@@ -400,19 +400,19 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fc0a462a1aaec24ebc54dbb7f178d1f
+      spriteID: 4ec89bb61760a8944bebe916d0d823e5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 00_hiraganaTrace_so
+      name: 00_hiraganaTrace2_so
       rect:
         serializedVersion: 2
         x: 2400
@@ -420,13 +420,13 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1447f40436bddc741874c19841d85ffd
+      spriteID: b7f083ae5b9aaba4bb4f0a91a1a4ed91
       vertices: []
       indices: 
       edges: []
@@ -434,7 +434,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7bdc6137b9b711e4f97925d56c35401d
+    spriteID: 4d5edf871bcf45c42be7b51c9e4d77ca
     vertices: []
     indices: 
     edges: []

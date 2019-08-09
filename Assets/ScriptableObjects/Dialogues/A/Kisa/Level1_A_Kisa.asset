@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee50d3b6adc64a24ba4541c50eebd5c1, type: 3}
-  m_Name: Level1_A
+  m_Name: Level1_A_Kisa
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
     characterExpression: 0
-    lines: Welcome to the first Hiragana lesson.
+    lines: Hey.
     dialogEvent:
       m_PersistentCalls:
         m_Calls:
@@ -32,17 +32,25 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
-    characterExpression: 0
-    lines: This time, we'll learn about the letter A.
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 2
+    lines: I know you're here to learn but I wanna go home so let's make it quick.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 2
+    lines: Don't bore me out will you.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
     characterExpression: 0
-    lines: The letter A looks like this.
+    lines: This is what the letter A looks like.
     dialogEvent:
       m_PersistentCalls:
         m_Calls:
@@ -59,25 +67,25 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
     characterExpression: 0
-    lines: As every hiragana characters, the letter has a specific writing order.
+    lines: This has to be written in specific order.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
     characterExpression: 0
-    lines: Pay attention to the order.
+    lines: Pay attention to the writing order.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - character: {fileID: 0}
-    characterExpression: 0
-    lines: First, draw a horizontal line.
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 2
+    lines: Draw a horizontal line first,
     dialogEvent:
       m_PersistentCalls:
         m_Calls:
@@ -94,9 +102,9 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - character: {fileID: 0}
-    characterExpression: 0
-    lines: Then, draw the vertical line. Make sure it curves a bit.
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 2
+    lines: Then draw a rather bendy vertical line, like the letter 't'.
     dialogEvent:
       m_PersistentCalls:
         m_Calls:
@@ -113,9 +121,10 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - character: {fileID: 0}
-    characterExpression: 0
-    lines: Finally, draw a spiral.
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 2
+    lines: Then a spiral from underneath the horizontal line and crossing through
+      the vertical line...if you get what i mean.
     dialogEvent:
       m_PersistentCalls:
         m_Calls:
@@ -132,25 +141,17 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
     characterExpression: 0
-    lines: Start from below the horizontal line, about three-quarter of the length,
+    lines: Do you get it?
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
     characterExpression: 0
-    lines: The beginning of the spiral should portrude a bit, like shown.
-    dialogEvent:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - character: {fileID: 0}
-    characterExpression: 0
-    lines: Now, why don't you try yourself?
+    lines: Now do it by yourself, I'm gonna finish my game.
     dialogEvent:
       m_PersistentCalls:
         m_Calls:

@@ -10,28 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee50d3b6adc64a24ba4541c50eebd5c1, type: 3}
-  m_Name: Level1_A C2
+  m_Name: Level1_A C3_Kisa
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
-    lines: Good job.
-    dialogEvent:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
-    lines: Do you get the hang of it?
-    dialogEvent:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - characterName: 
-    avatar: {fileID: 21300000, guid: 74fa813e08e3ad84b896fadf3b9266af, type: 3}
-    lines: Now let's increase the difficulty
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 2
+    lines: '.........'
     dialogEvent:
       m_PersistentCalls:
         m_Calls:
