@@ -21,11 +21,29 @@ EditorBuildSettings:
     path: Assets/Scenes/Rhythms/scene2.unity
     guid: 16328c63ce93ebf45aecbc1b007b8df1
   - enabled: 1
+    path: Assets/Scenes/Rhythms/scene3.unity
+    guid: 13e73a2c29ef21d4186e140662bae49e
+  - enabled: 1
     path: Assets/Scenes/Menu/Song Selector.unity
     guid: 135d04e2dc39eda49888e617b41305f3
   - enabled: 1
-    path: Assets/Scenes/Lessons/scene00.unity
+    path: Assets/Scenes/Lessons/scene00_Suzu.unity
     guid: 70c7a15cf63e2e447b59d1c3b2eae41c
+  - enabled: 1
+    path: Assets/Scenes/Lessons/scene01_Suzu.unity
+    guid: 1b0c0280354d3164c8436892bbe34377
+  - enabled: 1
+    path: Assets/Scenes/Lessons/scene02_Suzu.unity
+    guid: 4c31ec982b5a6934aab0c0971e91a9c6
+  - enabled: 1
+    path: Assets/Scenes/Lessons/scene03_Suzu.unity
+    guid: 8913e2d6da4e32140bc08d849df7417c
+  - enabled: 1
+    path: Assets/Scenes/Lessons/scene04_Suzu.unity
+    guid: 9e3056bb09d041d49b8d2b155d7b648d
+  - enabled: 1
+    path: Assets/Scenes/Lessons/scene00_Kisa.unity
+    guid: 07b18058b53a1f9489f8d93c7c211fc4
   - enabled: 1
     path: Assets/Scenes/Menu/LevelSelector.unity
     guid: deaf7cc60649dd74eb1952560c266535

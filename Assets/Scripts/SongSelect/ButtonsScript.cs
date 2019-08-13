@@ -34,7 +34,7 @@ public class ButtonsScript : MonoBehaviour
         Debug.Log(levelLoader.levelGroups[level].romajiNames[counter]);
         gameDetail.text = "Learn Hiragana " + levelLoader.levelGroups[level].romajiNames[counter] + "!";
         character.sprite = items.items[PlayerPrefs.GetInt("characterID")].itemImage;
-        playButton.onClick.AddListener(() => StartGame("scene" + level + counter));
+        playButton.onClick.AddListener(() => StartGame("scene" + level + counter + "_" + PlayerPrefs.GetString("character")));
     }
 
     public void LoadSongInfo(int songIndex)
