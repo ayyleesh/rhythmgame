@@ -5,19 +5,29 @@ using UnityEngine.UI;
 
 public class GlobalPopUp : MonoBehaviour
 {
+    public static GlobalPopUp instance;
     public StatusBarScript statusBarScript;
     public int currentLevel, newLevel;
     public GameObject tutorialPopUp, RewardPrefab, instRewardPopUp;
 
     private void Start()
     {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
         currentLevel = PlayerPrefs.GetInt("currentLevel");
         if (tutorialPopUp != null && PlayerPrefs.GetInt("tutorialIsShown") != 1)
         {
             ShowTutorial();
         }
-
-        DontDestroyOnLoad(this.gameObject);
+        
     }
 
     private void Update()

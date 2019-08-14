@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class LoadStoreItems : MonoBehaviour
 {
     public static LoadStoreItems instance;
+
+    public PurchasableItems purchasable;
+    public PurchasedItems purchased;
+
     public StoreItem[] items;
     public GameObject itemPrefab;
     public GameObject itemContainer;
@@ -27,24 +31,30 @@ public class LoadStoreItems : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        purchased = PurchasedItems.instance;
+        purchasable = PurchasableItems.instance;
         instance = this;
         currentCoins = PlayerPrefs.GetInt("coins");
         currentCoinsText.text = "" + currentCoins;
-        
+        items = purchasable.items;
+
         instItems = new GameObject[items.Length];
         button = new GameObject[items.Length];
         for (int i = 0; i < items.Length; i++)
         {
-            instItems[i] = Instantiate(itemPrefab, itemContainer.transform);
-            instItems[i].transform.GetChild(0).GetComponent<Image>().sprite = items[i].itemImage;
-            instItems[i].transform.GetChild(1).GetComponent<Text>().text = items[i].itemName;
-            instItems[i].transform.GetChild(2).GetComponent<Text>().text = items[i].itemDesc;
-            instItems[i].transform.GetChild(3).GetComponentInChildren<Text>().text = "" + items[i].itemPrice;
-            int x = i;
-            instItems[i].transform.GetChild(3).GetComponent<Button>().onClick.AddListener(() => BuyItem(x));
-            if (boughtItems.Contains(items[i].itemID))
+            if (items[i] != null)
             {
-                instItems[i].transform.GetChild(4).gameObject.SetActive(true);
+                instItems[i] = Instantiate(itemPrefab, itemContainer.transform);
+                instItems[i].transform.GetChild(0).GetComponent<Image>().sprite = items[i].itemImage;
+                instItems[i].transform.GetChild(1).GetComponent<Text>().text = items[i].itemName;
+                instItems[i].transform.GetChild(2).GetComponent<Text>().text = items[i].itemDesc;
+                instItems[i].transform.GetChild(3).GetComponentInChildren<Text>().text = "" + items[i].itemPrice;
+                int x = i;
+                instItems[i].transform.GetChild(3).GetComponent<Button>().onClick.AddListener(() => BuyItem(x));
+                if (purchased.items.Contains(items[i].itemID))
+                {
+                    instItems[i].transform.GetChild(4).gameObject.SetActive(true);
+                }
             }
         }
     }
@@ -62,10 +72,12 @@ public class LoadStoreItems : MonoBehaviour
             Debug.Log("buy for " + items[index].itemPrice );
             currentCoins = currentCoins - items[index].itemPrice;
             currentCoinsText.text = "" + currentCoins;
+            PlayerPrefs.SetInt("coins", currentCoins);
             int boughtItemID = items[index].itemID;
             ShowPopUp(boughtItemID);
             DisableItem(boughtItemID);
             AddToInventory(boughtItemID);
+            
         }
         else
         {
@@ -75,7 +87,8 @@ public class LoadStoreItems : MonoBehaviour
 
     public void AddToInventory(int id)
     {
-        boughtItems.Add(id);
+        purchased.items.Add(id);
+        PlayerPrefs.SetInt("boughtItem" + (purchased.items.Count - 1), id);
     }
 
     public void ShowPopUp(int id)

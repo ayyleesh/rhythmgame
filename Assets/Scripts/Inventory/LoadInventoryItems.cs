@@ -9,8 +9,9 @@ public class LoadInventoryItems : MonoBehaviour
     public GameObject charactersWindow;
     public Button itemsFilter, charactersFilter;
 
-    List<int> boughtItems = new List<int>() { 0, 1, 2, 3 };
+    public List<int> boughtItems = new List<int>() { 0 };
     public PurchasableItems purchasableItems;
+    public PurchasedItems purchased;
     public Transform itemSlotParent;
     public Transform characterSlotParent;
 
@@ -28,6 +29,13 @@ public class LoadInventoryItems : MonoBehaviour
 
     private void Start()
     {
+        purchased = PurchasedItems.instance;
+
+        for (int i = 0; i < PurchasedItems.instance.items.Count; i++)
+        {
+            boughtItems.Add(purchased.items[i]);
+        }
+
         itemSlots = itemSlotParent.GetComponentsInChildren<ItemSlot>();
         characterSlots = characterSlotParent.GetComponentsInChildren<CharacterSlot>();
         items = purchasableItems.items;

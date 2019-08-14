@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16b40dc0b4f2374bbea6032f5caecce, type: 3}
   m_Name: Character_Kisa 1
   m_EditorClassIdentifier: 
-  itemID: 0
+  itemID: 1
   itemType: character
   itemImage: {fileID: 21300000, guid: cf3761f5220da01418387bd3fef11ae9, type: 3}
   itemName: Kisa
