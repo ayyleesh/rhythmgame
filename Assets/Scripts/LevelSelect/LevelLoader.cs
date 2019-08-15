@@ -59,6 +59,10 @@ public class LevelLoader : MonoBehaviour
                 int counter = i;
                 instButton[i].GetComponent<ButtonCount>().buttonCount = counter;
                 instButton[i].transform.GetChild(1).GetComponent<Text>().text = levelGroups[k].levelNames[i];
+                if (levelGroups[k].romajiNames[i] == "Review")
+                {
+                    instButton[i].transform.GetChild(1).GetComponent<Text>().fontSize = 55;
+                }
                 instButton[i].transform.GetChild(0).GetComponent<Text>().text = levelGroups[k].romajiNames[i];
                 instButton[counter].GetComponent<Button>().onClick.AddListener(() => buttonsScript.LoadPopUpInfo(snapScroll.selectedPanelID, counter));
             }

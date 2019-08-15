@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2aea824172142b46a99bb551ef5ed25, type: 3}
+  m_Name: Level1_U Q1
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 3
+    lines: Well done.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
+    lines: Try to practice on your own, okay?
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
+    lines: Now, let's do a little quiz.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: HideBoard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  questionText: Which one of these is the letter U?
+  questionsInfo:
+  - buttonName: "\u3046"
+    questionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: CloseQuestion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    nextDialogue: {fileID: 11400000, guid: 82ae8934d1bcf56478340cdd03d6fea4, type: 2}
+  - buttonName: "\u3064"
+    questionEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    nextDialogue: {fileID: 11400000, guid: 438d9cd1d772686428a2dc78dc69ef6a, type: 2}

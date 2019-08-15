@@ -15,16 +15,23 @@ MonoBehaviour:
   dialogueInfo: []
   questionText: Which one of these is the letter A?
   questionsInfo:
+  - buttonName: "\u3088"
+    questionEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    nextDialogue: {fileID: 11400000, guid: 4b30eea2bb9bf394b82e13c260faf68b, type: 2}
   - buttonName: "\u3042"
     questionEvent:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
-          m_MethodName: CloseQuestion
+        - m_Target: {fileID: 0}
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgumentAssemblyTypeName: 
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -34,13 +41,6 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
     nextDialogue: {fileID: 11400000, guid: d988ba89b4fd2494980c063327ba6c45, type: 2}
   - buttonName: "\u304A"
-    questionEvent:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    nextDialogue: {fileID: 11400000, guid: 4b30eea2bb9bf394b82e13c260faf68b, type: 2}
-  - buttonName: "\u306E"
     questionEvent:
       m_PersistentCalls:
         m_Calls: []

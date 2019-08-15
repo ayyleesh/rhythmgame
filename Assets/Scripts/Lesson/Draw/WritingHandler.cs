@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class WritingHandler : MonoBehaviour
 {
 		public GameObject[] letters;//the letters list from A-Z
-		public static int currentLetterIndex;//the index of the current letter
+		public int currentLetterIndex;//the index of the current letter
 		private bool clickBeganOrMovedOutOfLetterArea;//does the click began or moved out of letter area
 		private int previousTracingPointIndex;//the index of the previous letter
 		private ArrayList currentTracingPoints;//holds the indexes of the tracing points

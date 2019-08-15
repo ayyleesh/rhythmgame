@@ -144,5 +144,9 @@ public class DialogManager : MonoBehaviour
     public void CloseQuestions()
     {
         dialogueQuestion.SetActive(false);
+        for (int i = 0; i < optionButtons.Length; i++)
+        {
+            optionButtons[i].SetActive(false);
+        }
     }
 }

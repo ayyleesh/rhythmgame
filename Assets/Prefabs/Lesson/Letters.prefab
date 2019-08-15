@@ -68,13 +68,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.60784316}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.14, y: 7.86}
+  m_Size: {x: 11.25, y: 11.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -147,11 +147,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letters:
   - {fileID: 5551494551433300882}
+  currentLetterIndex: 0
   lineRendererPrefab: {fileID: 100000, guid: f6c23f5a0fc0d594d8e115f20169a41a, type: 3}
   circlePointPrefab: {fileID: 100000, guid: f39f4a56f4d52f140a058ef371b96c95, type: 3}
   drawingMaterial: {fileID: 2100000, guid: 25115a551219c5145abadf7c7d81d218, type: 2}
   hand: {fileID: 0}
   showCursor: 1
+  canWrite: 0
   cheeringSound: {fileID: 0}
   positiveSound: {fileID: 0}
   wrongSound: {fileID: 0}
+  correctDialogues: []
+  wrongDialogue: {fileID: 0}
