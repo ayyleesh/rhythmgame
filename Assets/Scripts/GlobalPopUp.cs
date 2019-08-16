@@ -8,7 +8,7 @@ public class GlobalPopUp : MonoBehaviour
     public static GlobalPopUp instance;
     public StatusBarScript statusBarScript;
     public int currentLevel, newLevel;
-    public GameObject tutorialPopUp, RewardPrefab, instRewardPopUp;
+    public GameObject RewardPrefab, instRewardPopUp;
 
     private void Start()
     {
@@ -22,12 +22,13 @@ public class GlobalPopUp : MonoBehaviour
             Destroy(gameObject);
         }
 
-        currentLevel = PlayerPrefs.GetInt("currentLevel");
-        if (tutorialPopUp != null && PlayerPrefs.GetInt("tutorialIsShown") != 1)
+        if (PlayerPrefs.GetString("character") == null)
         {
-            ShowTutorial();
+            PlayerPrefs.SetString("character", "Suzu");
+            PlayerPrefs.SetInt("characterID", 0);
         }
-        
+
+        currentLevel = PlayerPrefs.GetInt("currentLevel");
     }
 
     private void Update()
@@ -39,17 +40,12 @@ public class GlobalPopUp : MonoBehaviour
         }
     }
 
-    void ShowTutorial()
+    public void ShowTutorial(GameObject popUp, string boolPrefs)
     {
-        tutorialPopUp.SetActive(true);
-        PlayerPrefs.SetInt("tutorialIsShown", 1);
-    }
-
-    public void CloseTutorial()
-    {
-        if (tutorialPopUp.activeInHierarchy)
+        if (popUp != null && PlayerPrefs.GetInt(boolPrefs) != 1)
         {
-            tutorialPopUp.SetActive(false);
+            popUp.SetActive(true);
+            PlayerPrefs.SetInt(boolPrefs, 1);
         }
     }
 

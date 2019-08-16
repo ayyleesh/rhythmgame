@@ -75,8 +75,8 @@ TextureImporter:
     21300140: Notes_PO
     21300142: Notes_A
     21300144: Notes_KA
-    21300146: Notes_2
-    21300148: Notes_3
+    21300146: Notes_Sa
+    21300148: Notes_Ta
     21300150: Notes_4
     21300152: Notes_5
     21300154: Notes_6
@@ -87,43 +87,43 @@ TextureImporter:
     21300164: Notes_11
     21300166: Notes_12
     21300168: Notes_13
-    21300170: Notes_14
+    21300170: Notes_N
     21300172: Notes_I
     21300174: Notes_KI
-    21300176: Notes_17
+    21300176: Notes_Shi
     21300178: Notes_18
-    21300180: Notes_19
+    21300180: Notes_Ni
     21300182: Notes_20
     21300184: Notes_21
     21300186: Notes_22
-    21300188: Notes_23
+    21300188: Notes_Ri
     21300190: Notes_24
-    21300192: Notes_25
+    21300192: Notes_Ji
     21300194: Notes_26
     21300196: Notes_27
     21300198: Notes_28
     21300200: Notes_U
     21300202: Notes_KU
-    21300204: Notes_31
-    21300206: Notes_32
-    21300208: Notes_33
+    21300204: Notes_Su
+    21300206: Notes_Tsu
+    21300208: Notes_Nu
     21300210: Notes_34
     21300212: Notes_35
     21300214: Notes_36
     21300216: Notes_37
     21300218: Notes_38
-    21300220: Notes_39
-    21300222: Notes_40
+    21300220: Notes_Zu
+    21300222: Notes_Du
     21300224: Notes_41
     21300226: Notes_42
     21300228: Notes_E
     21300230: Notes_KE
-    21300232: Notes_45
+    21300232: Notes_Se
     21300234: Notes_46
     21300236: Notes_47
     21300238: Notes_48
-    21300240: Notes_49
-    21300242: Notes_50
+    21300240: Notes_Me
+    21300242: Notes_Wo
     21300244: Notes_51
     21300246: Notes_52
     21300248: Notes_53
@@ -132,7 +132,7 @@ TextureImporter:
     21300254: Notes_56
     21300256: Notes_O
     21300258: Notes_KO
-    21300260: Notes_59
+    21300260: Notes_So
     21300262: Notes_60
     21300264: Notes_61
     21300266: Notes_62
@@ -144,6 +144,7 @@ TextureImporter:
     21300278: Notes_68
     21300280: Notes_69
     21300282: Notes_70
+    21300284: Notes_No
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -299,7 +300,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_2
+      name: Notes_Sa
       rect:
         serializedVersion: 2
         x: 352
@@ -319,7 +320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_3
+      name: Notes_Ta
       rect:
         serializedVersion: 2
         x: 528
@@ -539,7 +540,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_14
+      name: Notes_N
       rect:
         serializedVersion: 2
         x: 2464
@@ -599,7 +600,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_17
+      name: Notes_Shi
       rect:
         serializedVersion: 2
         x: 352
@@ -639,7 +640,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_19
+      name: Notes_Ni
       rect:
         serializedVersion: 2
         x: 704
@@ -719,7 +720,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_23
+      name: Notes_Ri
       rect:
         serializedVersion: 2
         x: 1408
@@ -759,7 +760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_25
+      name: Notes_Ji
       rect:
         serializedVersion: 2
         x: 1760
@@ -879,7 +880,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_31
+      name: Notes_Su
       rect:
         serializedVersion: 2
         x: 352
@@ -899,7 +900,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_32
+      name: Notes_Tsu
       rect:
         serializedVersion: 2
         x: 528
@@ -919,7 +920,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_33
+      name: Notes_Nu
       rect:
         serializedVersion: 2
         x: 704
@@ -1039,7 +1040,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_39
+      name: Notes_Zu
       rect:
         serializedVersion: 2
         x: 1760
@@ -1059,7 +1060,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_40
+      name: Notes_Du
       rect:
         serializedVersion: 2
         x: 1936
@@ -1159,7 +1160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_45
+      name: Notes_Se
       rect:
         serializedVersion: 2
         x: 352
@@ -1239,7 +1240,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_49
+      name: Notes_Me
       rect:
         serializedVersion: 2
         x: 1056
@@ -1259,7 +1260,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_50
+      name: Notes_Wo
       rect:
         serializedVersion: 2
         x: 1232
@@ -1439,7 +1440,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_59
+      name: Notes_So
       rect:
         serializedVersion: 2
         x: 352
@@ -1479,7 +1480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_61
+      name: Notes_No
       rect:
         serializedVersion: 2
         x: 704

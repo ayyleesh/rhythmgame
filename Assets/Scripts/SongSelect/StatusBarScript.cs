@@ -9,7 +9,7 @@ public class StatusBarScript : MonoBehaviour
 
     public int expPointsTotal, currentLevel;
     public float levelPercent;
-    int[] levelMaxExp = new int[] { 10000, 20000, 30000, 50000, 80000};
+    int[] levelMaxExp = new int[] { 1000, 2000, 3000, 5000, 8000, 13000, 21000, 34000, 55000, 89000};
     public Text coinsTotalText, levelText;
     public Slider expSlider;
 

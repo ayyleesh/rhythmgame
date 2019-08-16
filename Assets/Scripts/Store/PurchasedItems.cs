@@ -9,7 +9,7 @@ public class PurchasedItems : MonoBehaviour
 
     public List<int> items = new List<int>{ };
 
-    public void Awake()
+    public void Start()
     {
         purchasableItems = PurchasableItems.instance;
         if (instance == null)

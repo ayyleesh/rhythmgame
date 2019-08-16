@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject result, reward;
     public Slider slider;
     public GameObject comboObject;
+    public GameObject tapToStart;
 
     public Text scoreText;
     public Text multiplierText;
@@ -42,15 +43,16 @@ public class GameManager : MonoBehaviour
 
     public float coinMultiplier = 1;
     public float expMultiplier = 1;
+    public DisplayTutorial displayTutorial;
     PurchasableItems purchasableItems;
     public EquippableItem[] equippedItems;
 
     void Start()
     {
         instance = this;
-        totalNotes = FindObjectsOfType<NoteObject>().Length;
+        totalNotes = FindObjectsOfType<NoteObject>().Length-1;
         purchasableItems = FindObjectOfType<PurchasableItems>();
-
+        displayTutorial = FindObjectOfType<DisplayTutorial>();
         equippedItems = new EquippableItem[2];
         AddEquippedItems();
 
@@ -65,10 +67,12 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
-        if (!startPlaying)
+        if (!startPlaying && !displayTutorial.tutorial.activeInHierarchy)
         {
-            if (Input.anyKeyDown)
+            tapToStart.SetActive(true);
+            if (Input.anyKey)
             {
+                tapToStart.SetActive(false);
                 startPlaying = true;
                 noteScroller.hasStarted = true;
                 gameMusic.Play();

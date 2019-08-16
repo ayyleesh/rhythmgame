@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ka Group
   m_EditorClassIdentifier: 
   itemName: Ka-gyo
-  itemThumbnail: {fileID: 21300002, guid: 7b957fbd45bce2d47ae75a2e18fe3db7, type: 3}
+  itemThumbnail: {fileID: 21300010, guid: 7b957fbd45bce2d47ae75a2e18fe3db7, type: 3}
   level: 5
   levelNames:
   - "\u304B"
