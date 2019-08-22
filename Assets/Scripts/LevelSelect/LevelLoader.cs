@@ -18,7 +18,8 @@ public class LevelLoader : MonoBehaviour
     public int levelTotal;
     public int containerCount;
     public int buttonCount;
-    int levelCount;
+    int levelCount, lastStage, lastLesson;
+    string lastPlayedLevel;
 
     SnapScroll snapScroll;
     ButtonsScript buttonsScript;
@@ -26,6 +27,9 @@ public class LevelLoader : MonoBehaviour
     void Start()
     {
         levelCount = levelGroups.Length;
+        lastStage = PlayerPrefs.GetInt("lastStage", 0);
+        lastLesson = PlayerPrefs.GetInt("lastLevel", 0);
+        lastPlayedLevel = lastStage + lastLesson + "";
 
         GameObject content = GameObject.Find("Content");
         snapScroll = content.GetComponent<SnapScroll>();
@@ -58,13 +62,31 @@ public class LevelLoader : MonoBehaviour
                 instButton[i] = Instantiate(levelButton, instContainer[k].transform, false);
                 int counter = i;
                 instButton[i].GetComponent<ButtonCount>().buttonCount = counter;
-                instButton[i].transform.GetChild(1).GetComponent<Text>().text = levelGroups[k].levelNames[i];
-                if (levelGroups[k].romajiNames[i] == "Review")
+                if (i <= lastLesson && k <= lastStage || i >= lastLesson && k < lastStage)
                 {
-                    instButton[i].transform.GetChild(1).GetComponent<Text>().fontSize = 55;
+                    instButton[i].transform.GetChild(1).GetComponent<Text>().text = levelGroups[k].levelNames[i];
+                    if (levelGroups[k].romajiNames[i] == "Review")
+                    {
+                        instButton[i].transform.GetChild(1).GetComponent<Text>().fontSize = 55;
+                    }
+                    instButton[i].transform.GetChild(0).GetComponent<Text>().text = levelGroups[k].romajiNames[i];
+
+                    instButton[counter].GetComponent<Button>().onClick.AddListener(() => buttonsScript.LoadPopUpInfo(snapScroll.selectedPanelID, counter));
+                    if (i == lastLesson && k == lastStage)
+                    {
+                        instButton[i].transform.GetChild(0).GetComponent<Text>().color = new Color(1, 1, 1, 0.3f);
+                        instButton[i].transform.GetChild(1).GetComponent<Text>().color = new Color(1, 1, 1, 0.3f);
+                        instButton[i].transform.GetChild(2).GetComponent<Image>().color = new Color(0, 0, 0, 0.3f);
+                    }
                 }
-                instButton[i].transform.GetChild(0).GetComponent<Text>().text = levelGroups[k].romajiNames[i];
-                instButton[counter].GetComponent<Button>().onClick.AddListener(() => buttonsScript.LoadPopUpInfo(snapScroll.selectedPanelID, counter));
+                else
+                {
+                    instButton[counter].GetComponent<Button>().interactable = false;
+                    instButton[i].transform.GetChild(0).gameObject.SetActive(false);
+                    instButton[i].transform.GetChild(1).gameObject.SetActive(false);
+                    instButton[i].transform.GetChild(2).gameObject.SetActive(false);
+                    instButton[i].transform.GetChild(3).gameObject.SetActive(true);
+                }
             }
         }
     }

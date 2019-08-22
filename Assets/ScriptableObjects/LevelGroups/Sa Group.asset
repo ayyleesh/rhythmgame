@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Sa-gyo
   itemThumbnail: {fileID: 21300020, guid: 7b957fbd45bce2d47ae75a2e18fe3db7, type: 3}
-  level: 10
+  level: 3
   levelNames:
   - "\u3055"
   - "\u3057"

@@ -11,6 +11,7 @@ public class PanelLoader : MonoBehaviour
     public Text bpmIndicator;
     public Text levelIndicator;
     public Button normalButton;
+    public Button lockedButton;
 
     public SongMenuObject[] songMenus;
     SnapScroll snapScroll;
@@ -36,7 +37,16 @@ public class PanelLoader : MonoBehaviour
         albumThumbnail.sprite = songMenus[snapScroll.selectedPanelID].itemThumbnail;
 
         int songIndex = snapScroll.selectedPanelID + 1;
-        normalButton.GetComponent<Button>().onClick.AddListener(() => LoadLevel("scene"+songIndex));
+        if (snapScroll.selectedPanelID < 1)
+        {
+            normalButton.GetComponent<Button>().onClick.AddListener(() => LoadLevel("scene" + songIndex));
+            lockedButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            lockedButton.gameObject.SetActive(true);
+        }
+        
     }
 
     private void LoadLevel(string songName)

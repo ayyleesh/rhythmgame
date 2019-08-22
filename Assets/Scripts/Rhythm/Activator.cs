@@ -6,7 +6,7 @@ public class Activator : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
     public KeyCode key;
-    bool active = false;
+    public bool active = false;
     GameObject note;
     Sprite old;
     public bool createMode;
@@ -132,10 +132,13 @@ public class Activator : MonoBehaviour
             active = true;
             note = other.gameObject;
         }
-
         else if (other.gameObject.tag == "FinishNote")
         {
             GameManager.instance.DisplayResult();
+        }
+        else
+        {
+            active = false;
         }
 
     }

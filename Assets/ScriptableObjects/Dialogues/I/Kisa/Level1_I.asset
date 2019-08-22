@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee50d3b6adc64a24ba4541c50eebd5c1, type: 3}
+  m_Name: Level1_I
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: You again.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: DisableWriting
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: What is it? You want to take another lesson?
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 2
+    lines: Sounds troublesome, but fine.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: Just like alphabet letters, hiragana also have its own A-I-U-E-O.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: This time, we'll be learning about hiragana I.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: Hiragana I looks like this.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: ShowBoard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: Pay attention to the order.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: First, draw an inverted J letter, but with a smaller 'hook'
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: PlayAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: Then draw a shorter vertical line that curves a bit, like so.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: PlayAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: Make sure that the second line is shorter than the first one.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: Go try it yourself
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: ClearAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
+    characterExpression: 0
+    lines: 
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: CloseDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: StartWriting
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: EnlargeLetters
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null

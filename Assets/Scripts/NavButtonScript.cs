@@ -47,7 +47,6 @@ public class NavButtonScript : MonoBehaviour
 
     public void ToInventory()
     {
-        SavePreviousScene();
         SceneManager.LoadScene("Inventory");
     }
 
@@ -66,8 +65,17 @@ public class NavButtonScript : MonoBehaviour
         PlayerPrefs.SetString("previousScene", SceneManager.GetActiveScene().name);
     }
 
+    public void SavePrevious2Scene()
+    {
+        PlayerPrefs.SetString("previous2Scene", SceneManager.GetActiveScene().name);
+    }
     public void ToPreviousScene()
     {
         SceneManager.LoadScene(PlayerPrefs.GetString("previousScene"));
+    }
+
+    public void ToPrevious2Scene()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetString("previous2Scene"));
     }
 }

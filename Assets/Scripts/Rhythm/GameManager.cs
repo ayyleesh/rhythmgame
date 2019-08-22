@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         other.gameObject.SetActive(false);
-        ResetStreak();
+        
     }
 
     public void AddCombo()

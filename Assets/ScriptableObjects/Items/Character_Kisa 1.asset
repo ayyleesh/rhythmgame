@@ -20,6 +20,6 @@ MonoBehaviour:
   itemPrice: 100
   expressionSprite:
     normal: {fileID: 21300000, guid: 53590efbf2458f342bb3e68ef17e8cea, type: 3}
-    smile: {fileID: 0}
-    frown: {fileID: 0}
+    smile: {fileID: 21300000, guid: ce2e7e8ae7b2a9347b165ba405664bb1, type: 3}
+    frown: {fileID: 21300000, guid: 5b11627ab9884244db28cc7adc6f19e2, type: 3}
     laugh: {fileID: 0}

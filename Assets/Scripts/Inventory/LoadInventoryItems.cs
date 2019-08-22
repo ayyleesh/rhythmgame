@@ -79,7 +79,7 @@ public class LoadInventoryItems : MonoBehaviour
         for (int i = 0; i < characters.Count; i++)
         {
             GameObject characterButtons = GameObject.Find(characters[i].itemName);
-            characterButtons.GetComponent<Button>().enabled = true;
+            characterButtons.GetComponent<Button>().interactable = true;
             characterButtons.transform.GetChild(1).gameObject.SetActive(false);
         }
     }

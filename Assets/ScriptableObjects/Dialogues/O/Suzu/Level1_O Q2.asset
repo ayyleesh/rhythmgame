@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level1_O Q2
   m_EditorClassIdentifier: 
   dialogueInfo: []
-  questionText: Which one of these is the letter U?
+  questionText: Which one of these is the letter O?
   questionsInfo:
   - buttonName: "\u304A"
     questionEvent:

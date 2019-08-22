@@ -2907,6 +2907,8 @@ MonoBehaviour:
   reward: {fileID: 649422291}
   coins: {fileID: 1109230439}
   expPoints: {fileID: 962944843}
+  nextLevel: 4
+  nextStage: 0
   index: 0
   wrong: 0
   correct: 0
@@ -9882,7 +9884,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -0.000015258789, y: -130}
-  m_SizeDelta: {x: 200, y: 100}
+  m_SizeDelta: {x: 250, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1025193016
 MonoBehaviour:
@@ -16920,7 +16922,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300006, guid: da5088e2fa116584b8aa9cb25fa258ee, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 697ba4128b9b9b147bde9705b14bc4e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

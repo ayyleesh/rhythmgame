@@ -23,7 +23,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
     characterExpression: 0
-    lines: Try to practice on your own, okay?
+    lines: Did you notice something from the 5 characters we have learned?
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -31,7 +31,48 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
     characterExpression: 0
-    lines: Now, let's do a little quiz.
+    lines: 'All letters begin from the horizontal stroke! '
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
+    lines: Starting from left to right then up to down
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 2
+    lines: I don't know why, though...
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
+    lines: Of course, this may change along the way as we learn more characters, but
+      keep it in mind for now
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
+    lines: You know, in case you forget where to start...
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
+    lines: Anyway, let's do a little quiz.
     dialogEvent:
       m_PersistentCalls:
         m_Calls:

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
-    characterExpression: 3
+    characterExpression: 0
     lines: You done?
     dialogEvent:
       m_PersistentCalls:
@@ -23,7 +23,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
     characterExpression: 0
-    lines: Don't forget to do it yourself at home.
+    lines: Practice more to get used to it.
     dialogEvent:
       m_PersistentCalls:
         m_Calls: []

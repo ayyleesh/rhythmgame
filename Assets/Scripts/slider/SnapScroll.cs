@@ -44,7 +44,7 @@ public class SnapScroll : MonoBehaviour
             instPanel[i] = Instantiate(panel, transform, false);
             instPanel[i].transform.GetChild(0).GetComponent<Image>().sprite = menu[i].itemThumbnail;
             instPanel[i].transform.GetChild(1).GetComponent<Text>().text = menu[i].itemName;
-            instPanel[i].transform.GetChild(2).GetComponentInChildren<Text>().text = "Lv." + menu[i].level;
+            instPanel[i].transform.GetChild(2).GetComponentInChildren<Text>().text = "Stage " + menu[i].level;
             if (i == 0) continue;
             instPanel[i].transform.localPosition = new Vector2(instPanel[i].transform.localPosition.x, instPanel[i-1].transform.localPosition.y - panel.GetComponent<RectTransform>().sizeDelta.y - panelOffset);
             panelPosition[i] = -instPanel[i].transform.localPosition;

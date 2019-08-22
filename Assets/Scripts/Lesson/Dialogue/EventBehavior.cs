@@ -23,7 +23,11 @@ public class EventBehavior : ScriptableObject
         {
             board.SetActive(true);
         }
+    }
 
+    public void CloseDialogue()
+    {
+        DialogManager.instance.EndOfDialogue();
     }
 
     public void HideBoard()
@@ -61,6 +65,16 @@ public class EventBehavior : ScriptableObject
     {
         WritingHandler writingHandler = GameObject.FindObjectOfType<WritingHandler>();
         writingHandler.LoadNextLetter();
+    }
+
+    public void EnlargeLetters()
+    {
+        WritingHandler writingHandler = GameObject.FindObjectOfType<WritingHandler>();
+        for (int i = 0; i < writingHandler.letters.Length; i++)
+        {
+            writingHandler.letters[i].transform.localScale = new Vector3(2.5f, 2.5f, 1);
+            writingHandler.letters[i].transform.localPosition = new Vector3(-1.1f, -1.72f, 0);
+        }
     }
 
     
@@ -101,9 +115,11 @@ public class EventBehavior : ScriptableObject
     public void GiveReward()
     {
         PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins") + 50);
-        PlayerPrefs.SetInt("expPoints", PlayerPrefs.GetInt("expPoints") + 500);
+        PlayerPrefs.SetInt("expPoints", PlayerPrefs.GetInt("expPoints") + 300);
         LessonManager.instance.coins.text = "" + 50;
-        LessonManager.instance.expPoints.text = "" + 500;
+        LessonManager.instance.expPoints.text = "" + 300;
         LessonManager.instance.reward.SetActive(true);
+        PlayerPrefs.SetInt("lastLevel", LessonManager.instance.nextLevel);
+        PlayerPrefs.SetInt("lastStage", LessonManager.instance.nextStage);
     }
 }

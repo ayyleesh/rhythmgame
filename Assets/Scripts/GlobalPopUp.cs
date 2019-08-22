@@ -21,14 +21,13 @@ public class GlobalPopUp : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        if (PlayerPrefs.GetString("character") == null)
+        if (string.IsNullOrEmpty(PlayerPrefs.GetString("character")))
         {
             PlayerPrefs.SetString("character", "Suzu");
             PlayerPrefs.SetInt("characterID", 0);
         }
 
-        currentLevel = PlayerPrefs.GetInt("currentLevel");
+        currentLevel = PlayerPrefs.GetInt("currentLevel", 0);
     }
 
     private void Update()

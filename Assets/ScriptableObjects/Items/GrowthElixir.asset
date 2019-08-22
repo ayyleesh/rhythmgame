@@ -19,6 +19,6 @@ MonoBehaviour:
   itemDesc: 'Makes you smarter!
 
     Multiplies Exp. Point by 1.5.'
-  itemPrice: 300
+  itemPrice: 200
   coinMultiplier: 1
   expMultiplier: 1.5

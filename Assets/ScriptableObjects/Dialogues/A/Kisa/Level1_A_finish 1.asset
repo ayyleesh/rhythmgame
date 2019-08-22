@@ -22,7 +22,7 @@ MonoBehaviour:
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
   - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
-    characterExpression: 3
+    characterExpression: 1
     lines: Nice one.
     dialogEvent:
       m_PersistentCalls:

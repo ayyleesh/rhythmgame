@@ -21,11 +21,25 @@ public class ButtonsScript : MonoBehaviour
     public SnapScroll snapScroll;
     public Image item1, item2;
 
+    public GameObject warningPopUp;
+    public Text warningMessage;
+
 
     public void ShowPopUp()
     {
         isActive = true;
         popUp.SetActive(true);
+    }
+    
+    public void ShowWarning(string warning)
+    {
+        warningPopUp.SetActive(true);
+        warningMessage.text = "Finish all lessons in stage " + (snapScroll.selectedPanelID + 1) + " to play!";
+    }
+
+    public void CloseWarning()
+    {
+        warningPopUp.SetActive(false);
     }
 
     public void LoadPopUpInfo(int level, int counter)

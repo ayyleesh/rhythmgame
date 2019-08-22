@@ -13,6 +13,7 @@ public class LessonManager : MonoBehaviour
     public GameObject cursor;
     public GameObject result, reward;
     public Text coins, expPoints;
+    public int nextLevel, nextStage;
     public int index;
     public int wrong, correct;
 

@@ -17,12 +17,15 @@ public class LoadStoreItems : MonoBehaviour
     public Text currentCoinsText;
 
     [Header("Confirmation")]
-    public GameObject confirm;
-
-    [Header("popup")]
-    public GameObject popUp;
+    public GameObject confirmPopUp;
     public Image purchasedItemSprite;
     public Text purchasedItemName;
+    public Text purchasedPrice;
+    public Button purchaseButton;
+
+    [Header("Message")]
+    public GameObject messagePopUp;
+    public Text message;
 
     GameObject[] instItems, button;
     public List<int> boughtItems = new List<int> { 0, 1 };
@@ -48,12 +51,12 @@ public class LoadStoreItems : MonoBehaviour
                 instItems[i].transform.GetChild(0).GetComponent<Image>().sprite = items[i].itemImage;
                 instItems[i].transform.GetChild(1).GetComponent<Text>().text = items[i].itemName;
                 instItems[i].transform.GetChild(2).GetComponent<Text>().text = items[i].itemDesc;
-                instItems[i].transform.GetChild(3).GetComponentInChildren<Text>().text = "" + items[i].itemPrice;
+                instItems[i].transform.GetChild(4).GetComponentInChildren<Text>().text = "" + items[i].itemPrice;
                 int x = i;
-                instItems[i].transform.GetChild(3).GetComponent<Button>().onClick.AddListener(() => BuyItem(x));
+                instItems[i].transform.GetChild(4).GetComponent<Button>().onClick.AddListener(() => ShowPopUp(x));
                 if (purchased.items.Contains(items[i].itemID))
                 {
-                    instItems[i].transform.GetChild(4).gameObject.SetActive(true);
+                    instItems[i].transform.GetChild(5).gameObject.SetActive(true);
                 }
             }
         }
@@ -74,14 +77,13 @@ public class LoadStoreItems : MonoBehaviour
             currentCoinsText.text = "" + currentCoins;
             PlayerPrefs.SetInt("coins", currentCoins);
             int boughtItemID = items[index].itemID;
-            ShowPopUp(boughtItemID);
+            ShowMessage("Successfully bought " + items[index].itemName + " for " + items[index].itemPrice + " coins!");
             DisableItem(boughtItemID);
             AddToInventory(boughtItemID);
-            
         }
         else
         {
-            Debug.Log("can't buy");
+            ShowMessage("You don't have enough coins!");
         }
     }
 
@@ -93,15 +95,23 @@ public class LoadStoreItems : MonoBehaviour
 
     public void ShowPopUp(int id)
     {
+        confirmPopUp.SetActive(true);
         purchasedItemName.text = items[id].itemName;
         purchasedItemSprite.sprite = items[id].itemImage;
-        popUp.SetActive(true);
+        purchasedPrice.text = "" + items[id].itemPrice;
+        purchaseButton.onClick.AddListener(() => BuyItem(id));
+    }
 
+    public void ShowMessage(string msg)
+    {
+        messagePopUp.SetActive(true);
+        message.text = msg;
     }
 
     public void ClosePopUp()
     {
-        popUp.SetActive(false);
+        confirmPopUp.SetActive(false);
+        messagePopUp.SetActive(false);
     }
 
     public void DisableItem(int id)

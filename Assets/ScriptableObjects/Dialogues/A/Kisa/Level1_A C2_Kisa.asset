@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueInfo:
   - character: {fileID: 11400000, guid: 432ad76022905e840b7aac9bfe2b9f47, type: 2}
     characterExpression: 2
-    lines: '......'
+    lines: '.........continue...'
     dialogEvent:
       m_PersistentCalls:
         m_Calls:

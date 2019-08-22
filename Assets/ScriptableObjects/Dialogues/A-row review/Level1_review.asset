@@ -53,6 +53,30 @@ MonoBehaviour:
     lines: Let's start with hiragana A.
     dialogEvent:
       m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
+    lines: When you forgot where, remember our newly discovered insight!
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
+    lines: Start from left to right, then top to bottom.
+    dialogEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - character: {fileID: 11400000, guid: 7761e49c2db92634fa106ba2b83ae1b0, type: 2}
+    characterExpression: 0
+    lines: 
+    dialogEvent:
+      m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
           m_MethodName: ShowBoard
@@ -67,6 +91,28 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
           m_MethodName: StartWriting
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: EnlargeLetters
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: c34e902856f1c874db1c965b655614b5, type: 2}
+          m_MethodName: CloseDialogue
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
